@@ -21,10 +21,6 @@ public class Player : MonoBehaviour
 
         body.linearVelocity = new Vector2(horizontal, vertical) * speed;
 
-        if (Input.GetButtonDown("Fire1"))
-        {
-            Instantiate(bullet, transform.position, transform.rotation);
-        }
-
+      
     }
 }
