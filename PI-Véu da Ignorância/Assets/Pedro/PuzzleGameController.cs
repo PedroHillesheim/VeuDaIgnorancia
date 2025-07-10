@@ -1,11 +1,10 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class TestarGamecontroler : MonoBehaviour
+public class PuzzleGameController : MonoBehaviour
 {
     public int errosans = 0;
     public UnityEvent win7ErrosCondicion;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         
@@ -14,7 +13,7 @@ public class TestarGamecontroler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(errosans >= 1)
+        if(errosans == 7)
         {
             win7ErrosCondicion.Invoke();
         }
