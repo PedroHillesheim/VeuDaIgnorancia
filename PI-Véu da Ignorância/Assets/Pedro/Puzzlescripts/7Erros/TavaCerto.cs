@@ -1,19 +1,20 @@
 using UnityEngine;
 
-public class Erros : MonoBehaviour
+public class TavaCerto : MonoBehaviour
 {
-    public bool increseOneTime = false;
-    public int errosans = 0;
     PuzzleGameController puzzleGameController;
     void Start()
     {
         puzzleGameController = FindFirstObjectByType(typeof(PuzzleGameController)) as PuzzleGameController;
     }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
     public void OnMouseDown()
     {
-        if (increseOneTime == false)
-        {
-            puzzleGameController.errosans++;
-        }
+        puzzleGameController.tavaCerto++;
     }
 }
