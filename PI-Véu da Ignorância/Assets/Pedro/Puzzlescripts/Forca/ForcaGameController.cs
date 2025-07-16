@@ -11,8 +11,7 @@ public class ForcaGameController : MonoBehaviour
     char[] palavraEscondida;
     string letrasErradas = "";
     int tentativasRestantes = 6;
-    public bool verificacaoDeDerrota = false;
-
+    bool verificacaoDeDerrota = false;
     void Start()
     {
         palavraSecreta = palavraSecreta.ToUpper();

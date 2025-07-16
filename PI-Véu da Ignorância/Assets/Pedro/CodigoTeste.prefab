@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3409565327886329983}
   - component: {fileID: 7892371097688226931}
   - component: {fileID: 3954282755764222524}
-  - component: {fileID: 3358767174456456230}
+  - component: {fileID: 1100789388133696841}
   m_Layer: 0
   m_Name: CodigoTeste
   m_TagString: Untagged
@@ -135,7 +135,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3358767174456456230
+--- !u!114 &1100789388133696841
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,8 +144,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1329719529014799242}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc08b51e24b301e4b99fa86e5bb3217d, type: 3}
+  m_Script: {fileID: 11500000, guid: 2cfec2d483f7fab49858a89c38493ad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   increseOneTime: 0
-  errosans: 0
