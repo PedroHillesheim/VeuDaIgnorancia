@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 public class PuzzleGameController : MonoBehaviour
 {
-    public int errorsans = 0;
+    public int erroAchado = 0;
     public int tavaCerto = 0;
     [SerializeField] int tentativas;
     public UnityEvent win7ErrosCondicion;
@@ -14,9 +14,9 @@ public class PuzzleGameController : MonoBehaviour
 
     void Update()
     {
-        acertosTx.text = $"ErrosEncontraso: {errorsans}";
-        tentativasRestantes.text = $"Tentativas Restantes: {tavaCerto -= tentativas}";
-        if (errorsans == 7)
+        acertosTx.text = $"ErrosEncontraso: {erroAchado}";
+        tentativasRestantes.text = $"Tentativas Restantes: {tentativas - tavaCerto}";
+        if (erroAchado == 7)
         {
             win7ErrosCondicion.Invoke();
         }

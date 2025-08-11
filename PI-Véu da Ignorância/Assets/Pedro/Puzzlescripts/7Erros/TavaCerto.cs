@@ -15,6 +15,6 @@ public class TavaCerto : MonoBehaviour
     }
     public void OnMouseDown()
     {
-        puzzleGameController.tavaCerto++;
+        puzzleGameController.tavaCerto++;       
     }
 }
