@@ -3,7 +3,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private float horizontal;
-    private float vertical;
+   
     public float speed;
     public GameObject bullet;
     [SerializeField]private Rigidbody2D body;
@@ -17,10 +17,10 @@ public class Player : MonoBehaviour
     void Update()
     {
         horizontal = Input.GetAxis("Horizontal");
-        vertical = Input.GetAxis("Vertical");
+        
 
-        body.linearVelocity = new Vector2(horizontal, vertical) * speed;
+        body.linearVelocity = new Vector2 (horizontal * speed, body.linearVelocity.y);
 
-      
+
     }
 }
