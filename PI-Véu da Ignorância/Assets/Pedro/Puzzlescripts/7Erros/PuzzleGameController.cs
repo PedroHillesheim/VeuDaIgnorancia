@@ -6,6 +6,7 @@ public class PuzzleGameController : MonoBehaviour
 {
     public int erroAchado = 0;
     public int tavaCerto = 0;
+    bool apenasUmaVez = true;
     [SerializeField] int tentativas;
     public UnityEvent win7ErrosCondicion;
     public UnityEvent lose7ErrosCondicion;
@@ -24,6 +25,13 @@ public class PuzzleGameController : MonoBehaviour
         {
             lose7ErrosCondicion.Invoke();
         }
-
+    }
+    public void OnMouseDown()
+    {
+        if(apenasUmaVez == true)
+        {
+            erroAchado++;
+            apenasUmaVez = false;
+        }
     }
 }
