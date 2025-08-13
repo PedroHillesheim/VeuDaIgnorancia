@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -34,7 +35,13 @@ public class PuzzleGameController : MonoBehaviour
     }
     public void ErroEncontrado()
     {
-        erroAchado = true;       
+        bool umaVez = false;
+        if (umaVez == false)
+        {
+            erroAchado++;
+            umaVez = true;
+        }
+        
     }
     public void TavaCerto()
     {
