@@ -5,6 +5,7 @@ public class CheckDeReconstrucao : MonoBehaviour
     public bool check = false;
     public bool sePegou = false;
     public GameObject material;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,6 +17,7 @@ public class CheckDeReconstrucao : MonoBehaviour
     {
         
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (check == false)

@@ -26,6 +26,7 @@ public class PuzzleGameController : MonoBehaviour
             lose7ErrosCondicion.Invoke();
         }
     }
+
     public void ErroEncontrado()
     {
         bool umaVez = false;
@@ -36,6 +37,7 @@ public class PuzzleGameController : MonoBehaviour
         }
         
     }
+
     public void TavaCerto()
     {
         tavaCerto++;

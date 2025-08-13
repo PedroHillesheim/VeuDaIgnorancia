@@ -12,6 +12,7 @@ public class ForcaGameController : MonoBehaviour
     string letrasErradas = "";
     int tentativasRestantes = 6;
     bool verificacaoDeDerrota = false;
+
     void Start()
     {
         palavraSecreta = palavraSecreta.ToUpper();
@@ -55,7 +56,6 @@ public class ForcaGameController : MonoBehaviour
             tentativasRestantes--;
             LoseScreen();
         }
-
         AtualizarUI();
     }
 
@@ -79,6 +79,7 @@ public class ForcaGameController : MonoBehaviour
         verificacaoDeDerrota = false;
         AtualizarUI();
     }
+
     public void WinScreen()
     {
         if (new string(palavraEscondida) == palavraSecreta)
@@ -86,6 +87,7 @@ public class ForcaGameController : MonoBehaviour
                 winScreen.Invoke();
         }
     }
+
     public void LoseScreen()
     {
         if (tentativasRestantes <= 0)
