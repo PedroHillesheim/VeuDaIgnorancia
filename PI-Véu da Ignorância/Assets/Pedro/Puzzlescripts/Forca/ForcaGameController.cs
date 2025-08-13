@@ -73,7 +73,7 @@ public class ForcaGameController : MonoBehaviour
         palavraEscondida = new string('_', palavraSecreta.Length).ToCharArray();
         if (verificacaoDeDerrota == true)
         {
-            winScreen.Invoke();
+            loseScreen.Invoke();
             verificacaoDeDerrota = false;
         }
         verificacaoDeDerrota = false;

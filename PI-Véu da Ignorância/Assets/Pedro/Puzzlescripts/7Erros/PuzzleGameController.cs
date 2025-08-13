@@ -15,15 +15,8 @@ public class PuzzleGameController : MonoBehaviour
 
     void Update()
     {
-        if (erroAchado == 7)
-        {
-            acertosTx.text = $"ErrosEncontrados: 0";
-        }
-        else
-        {
-            acertosTx.text = $"ErrosEncontraso 1";
-        }
-            tentativasRestantes.text = $"Tentativas Restantes: {tentativas - tavaCerto} ";
+        acertosTx.text = $"ErrosEncontrados: {erroAchado}";
+        tentativasRestantes.text = $"Tentativas Restantes: {tentativas - tavaCerto} ";
         if (erroAchado == 7)
         {
             win7ErrosCondicion.Invoke();
