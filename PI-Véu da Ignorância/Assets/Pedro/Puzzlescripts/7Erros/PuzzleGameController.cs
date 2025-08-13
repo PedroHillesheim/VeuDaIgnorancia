@@ -6,7 +6,6 @@ public class PuzzleGameController : MonoBehaviour
 {
     public int erroAchado = 0;
     public int tavaCerto = 0;
-    bool apenasUmaVez = true;
     [SerializeField] int tentativas;
     public UnityEvent win7ErrosCondicion;
     public UnityEvent lose7ErrosCondicion;
@@ -15,23 +14,30 @@ public class PuzzleGameController : MonoBehaviour
 
     void Update()
     {
-        acertosTx.text = $"ErrosEncontraso: {erroAchado}";
-        tentativasRestantes.text = $"Tentativas Restantes: {tentativas - tavaCerto}";
+        if (erroAchado == 7)
+        {
+            acertosTx.text = $"ErrosEncontrados: 0";
+        }
+        else
+        {
+            acertosTx.text = $"ErrosEncontraso 1";
+        }
+            tentativasRestantes.text = $"Tentativas Restantes: {tentativas - tavaCerto} ";
         if (erroAchado == 7)
         {
             win7ErrosCondicion.Invoke();
         }
         if (tavaCerto == tentativas)
-        {
+        { 
             lose7ErrosCondicion.Invoke();
         }
     }
-    public void OnMouseDown()
+    public void ErroEncontrado()
     {
-        if(apenasUmaVez == true)
-        {
-            erroAchado++;
-            apenasUmaVez = false;
-        }
+        erroAchado = true;       
+    }
+    public void TavaCerto()
+    {
+        tavaCerto++;
     }
 }
