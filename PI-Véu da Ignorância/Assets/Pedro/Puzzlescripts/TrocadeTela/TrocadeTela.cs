@@ -10,7 +10,7 @@ public class TrocadeTela : MonoBehaviour
         puzzleGameController = FindFirstObjectByType(typeof(PuzzleGameController)) as PuzzleGameController;
     }
 
-    public void Next(string sceneName)
+    public void OutraScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
     }
