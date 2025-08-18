@@ -1,4 +1,7 @@
+using NUnit.Framework;
 using TMPro;
+using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -12,6 +15,7 @@ public class ForcaGameController : MonoBehaviour
     string letrasErradas = "";
     int tentativasRestantes = 6;
     bool verificacaoDeDerrota = false;
+    public bool pareDeAVerificação = false;
 
     void Start()
     {
@@ -23,6 +27,10 @@ public class ForcaGameController : MonoBehaviour
     {
         for (char c = 'A'; c <= 'Z'; c++)
         {
+            if (pareDeAVerificação == true)
+            {
+                break;
+            }
             KeyCode key = KeyCode.A + (c - 'A');
             if (Input.GetKeyDown(key))
             {
@@ -77,6 +85,7 @@ public class ForcaGameController : MonoBehaviour
             verificacaoDeDerrota = false;
         }
         verificacaoDeDerrota = false;
+        pareDeAVerificação = false;
         AtualizarUI();
     }
 
@@ -84,7 +93,8 @@ public class ForcaGameController : MonoBehaviour
     {
         if (new string(palavraEscondida) == palavraSecreta)
         {
-                winScreen.Invoke();
+            winScreen.Invoke();
+            pareDeAVerificação = true;
         }
     }
 
@@ -94,6 +104,7 @@ public class ForcaGameController : MonoBehaviour
         {
             loseScreen.Invoke();
             verificacaoDeDerrota = true;
+            pareDeAVerificação = true;
         }
     }
 }
