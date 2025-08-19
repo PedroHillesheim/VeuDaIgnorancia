@@ -1,44 +1,45 @@
-using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class PuzzleGameController : MonoBehaviour
 {
     public int erroAchado = 0;
     public int tavaCerto = 0;
-    [SerializeField] int tentativas;
-    public UnityEvent win7ErrosCondicion;
-    public UnityEvent lose7ErrosCondicion;
-    public TMP_Text tentativasRestantes;
-    public TMP_Text acertosTx;
+    [SerializeField] int maxTentativas = 10;
+    public UnityEvent eventoVitoria;
+    public UnityEvent eventoDerrota;
+    public TMP_Text textoRestantes;
+    public TMP_Text textoAcertos;
 
     void Update()
     {
-        acertosTx.text = $"ErrosEncontrados: {erroAchado}";
-        tentativasRestantes.text = $"Tentativas Restantes: {tentativas - tavaCerto} ";
-        if (erroAchado == 7)
+        textoAcertos.text = $"Erros Encontrados: {erroAchado}";
+        textoRestantes.text = $"Tentativas Restantes: {maxTentativas - tavaCerto}";
+
+        if (erroAchado >= 7)
         {
-            win7ErrosCondicion.Invoke();
+            eventoVitoria.Invoke();
         }
-        if (tavaCerto == tentativas)
-        { 
-            lose7ErrosCondicion.Invoke();
+        else if (tavaCerto >= maxTentativas)
+        {
+            eventoDerrota.Invoke();
         }
     }
 
-    public void ErroEncontrado()
+    // Método para quando clicar em um ERRO (passe o botão como parâmetro)
+    public void CliqueEmErro(Button botaoClicado)
     {
-        bool umaVez = false;
-        if (umaVez == false)
-        {
-            erroAchado++;
-            umaVez = true;
-        }
-        
+        // Desativa o botão para não poder clicar de novo
+        botaoClicado.interactable = false;
+        erroAchado++;
+        // Opcional: muda a cor para mostrar que já foi encontrado
+        botaoClicado.image.color = Color.green;
     }
 
-    public void TavaCerto()
+    // Método para quando clicar em algo que NÃO é um erro
+    public void CliqueEmNaoErro()
     {
         tavaCerto++;
     }

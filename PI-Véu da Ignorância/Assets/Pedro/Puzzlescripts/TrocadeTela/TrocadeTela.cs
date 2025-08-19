@@ -17,8 +17,8 @@ public class TrocadeTela : MonoBehaviour
 
     public void ReiniciarJogo()
     {
-        puzzleGameController.erroAchado = 0;
-        puzzleGameController.tavaCerto = 0;
-        //puzzleGameController. (caso necessario)
+        // puzzleGameController.erroAchado = 0;
+        //puzzleGameController.tavaCerto = 0;
+        //puzzleGameController. Obs:(caso necessario);
     }
 }
