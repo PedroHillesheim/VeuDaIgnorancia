@@ -4,184 +4,128 @@ using UnityEngine.Events;
 
 public class Codigo : MonoBehaviour
 {
-    [SerializeField] public int oCodigoEmSi = 3235;
-    public int codigoSecreto = 0000;
-    public int tentativas = 2;
-    public TMP_Text textoAviso;
-    public UnityEvent winScreen;
-    public UnityEvent loseScreen;
-    public TMP_Text textoDisplay;
+    public GameObject painelCodigo;
+    public TMP_Text textoCodigoDigitado;
+    public TMP_Text textoResultado;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [Header("Configuração")]
+    public string codigoCorreto = "1234";
+    private string codigoAtual = "";
+
+    public int maxDigitos = 4;
+
+    [Header("Proximidade")]
+    public Transform player;
+    public Transform areaCodigo;
+    public float distanciaMaxima = 3f;
+
+    [Header("Porta")]
+    public Transform porta;
+    public Vector3 posicaoAberta;   // Posição para onde a porta deve se mover
+    public float velocidadePorta = 2f;
+
+    private Vector3 posicaoFechada;
+    private bool portaAberta = false;
+
     void Start()
     {
-        if (tentativas == 0)
-        {
-            loseScreen.Invoke();
-        }
+        painelCodigo.SetActive(false);
+        posicaoFechada = porta.position;
+        textoResultado.text = " ";
+        textoCodigoDigitado.text = " ";
     }
 
-    // Update is called once per frame
     void Update()
     {
-        int secretoLeigth = codigoSecreto.ToString().Length;
-        textoDisplay.text = $"{codigoSecreto}";
-    }
-    public void N1()
-    {
-        int secretoLeigth = codigoSecreto.ToString().Length;
-        int oCodigoLeigth = oCodigoEmSi.ToString().Length;
-        if (secretoLeigth <= oCodigoLeigth)
+        float distancia = Vector3.Distance(player.position, areaCodigo.position);
+
+        if (distancia <= distanciaMaxima)
         {
-            codigoSecreto += 1;
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                if (!painelCodigo.activeSelf)
+                {
+                    painelCodigo.SetActive(true);
+                    textoResultado.text = "";
+                    LimparCodigo();
+                }
+            }
         }
         else
         {
-            textoAviso.text = "Desculpe o maximo é 4 caracteres";
+            if (painelCodigo.activeSelf)
+            {
+                painelCodigo.SetActive(false);
+                LimparCodigo();
+                textoResultado.text = "";
+            }
         }
 
-    }
-    public void N2()
-    {
-        int secretoLeigth = codigoSecreto.ToString().Length;
-        int oCodigoLeigth = oCodigoEmSi.ToString().Length;
-        if (secretoLeigth <= oCodigoLeigth)
+        if (Input.GetKeyDown(KeyCode.Escape) && painelCodigo.activeSelf)
         {
-            codigoSecreto += 2;
+            painelCodigo.SetActive(false);
+            LimparCodigo();
+            textoResultado.text = "";
+        }
+
+        // Movimenta a porta se estiver aberta
+        if (portaAberta)
+        {
+            porta.position = Vector3.MoveTowards(porta.position, posicaoAberta, velocidadePorta * Time.deltaTime);
         }
         else
         {
-            textoAviso.text = "Desculpe o maximo é 4 caracteres";
+            // Opcional: porta fecha automaticamente (volta para posição fechada)
+            porta.position = Vector3.MoveTowards(porta.position, posicaoFechada, velocidadePorta * Time.deltaTime);
         }
     }
-    public void N3()
+
+    public void InserirNumero(string numero)
     {
-        int secretoLeigth = codigoSecreto.ToString().Length;
-        int oCodigoLeigth = oCodigoEmSi.ToString().Length;
-        if (secretoLeigth <= oCodigoLeigth)
+        if (codigoAtual.Length >= maxDigitos)
+            return;
+
+        codigoAtual += numero;
+        AtualizarTextoCodigo();
+    }
+
+    public void VerificarCodigo()
+    {
+        if (codigoAtual == codigoCorreto)
         {
-            codigoSecreto += 3;
+            textoResultado.text = "Parabéns! Você ganhou!";
+            textoResultado.color = Color.green;
+
+            AbrirPorta();
         }
         else
         {
-            textoAviso.text = "Desculpe o maximo é 4 caracteres";
+            textoResultado.text = "Código incorreto.";
+            textoResultado.color = Color.red;
         }
+
+        LimparCodigo();
     }
-    public void N4()
+
+    public void LimparCodigo()
     {
-        int secretoLeigth = codigoSecreto.ToString().Length;
-        int oCodigoLeigth = oCodigoEmSi.ToString().Length;
-        if (secretoLeigth <= oCodigoLeigth)
-        {
-            codigoSecreto += 4;
-        }
-        else
-        {
-            textoAviso.text = "Desculpe o maximo é 4 caracteres";
-        }
+        codigoAtual = "";
+        AtualizarTextoCodigo();
     }
-    public void N5()
+
+    void AtualizarTextoCodigo()
     {
-        int secretoLeigth = codigoSecreto.ToString().Length;
-        int oCodigoLeigth = oCodigoEmSi.ToString().Length;
-        if (secretoLeigth <= oCodigoLeigth)
-        {
-            codigoSecreto += 5;
-        }
-        else
-        {
-            textoAviso.text = "Desculpe o maximo é 4 caracteres";
-        }
+        textoCodigoDigitado.text = codigoAtual;
     }
-    public void N6()
+
+    void AbrirPorta()
     {
-        int secretoLeigth = codigoSecreto.ToString().Length;
-        int oCodigoLeigth = oCodigoEmSi.ToString().Length;
-        if (secretoLeigth <= oCodigoLeigth)
-        {
-            codigoSecreto += 6;
-        }
-        else
-        {
-            textoAviso.text = "Desculpe o maximo é 4 caracteres";
-        }
+        portaAberta = true;
     }
-    public void N7()
+
+    // Opcional: método para fechar porta (se quiser)
+    public void FecharPorta()
     {
-        int secretoLeigth = codigoSecreto.ToString().Length;
-        int oCodigoLeigth = oCodigoEmSi.ToString().Length;
-        if (secretoLeigth <= oCodigoLeigth)
-        {
-            codigoSecreto += 7;
-        }
-        else
-        {
-            textoAviso.text = "Desculpe o maximo é 4 caracteres";
-        }
-    }
-    public void N8()
-    {
-        int secretoLeigth = codigoSecreto.ToString().Length;
-        int oCodigoLeigth = oCodigoEmSi.ToString().Length;
-        if (secretoLeigth <= oCodigoLeigth)
-        {
-            codigoSecreto += 8;
-        }
-        else
-        {
-            textoAviso.text = "Desculpe o maximo é 4 caracteres";
-        }
-    }
-    public void N9()
-    {
-        int secretoLeigth = codigoSecreto.ToString().Length;
-        int oCodigoLeigth = oCodigoEmSi.ToString().Length;
-        if (secretoLeigth <= oCodigoLeigth)
-        {
-            codigoSecreto += 9;
-        }
-        else
-        {
-            textoAviso.text = "Desculpe o maximo é 4 caracteres";
-        }
-    }
-    public void N0()
-    {
-        int secretoLeigth = codigoSecreto.ToString().Length;
-        int oCodigoLeigth = oCodigoEmSi.ToString().Length;
-        if (secretoLeigth <= oCodigoLeigth)
-        {
-            codigoSecreto += 0;
-        }
-        else
-        {
-            textoAviso.text = "Desculpe o maximo é 4 caracteres";
-        }
-    }
-    public void Enter()
-    {
-        int oCodigoLeigth = oCodigoEmSi.ToString().Length;
-        int codigoLeigth = codigoSecreto.ToString().Length;
-        if(codigoLeigth < oCodigoLeigth)
-        {
-            tentativas--;
-            textoAviso.text = "Desculpe o codigo tem mais caracteres";
-            textoAviso.color = Color.red;
-        } 
-        else if (codigoLeigth > oCodigoLeigth)
-        {
-            tentativas--;
-            textoAviso.text = "Desculpe o codigo tem menos caracteres";
-        }
-        else if(codigoSecreto == oCodigoEmSi)
-        {
-            textoAviso.text = "Correto";
-            winScreen.Invoke();
-        }
-        else
-        {
-            tentativas--;
-            textoAviso.text = "Desculpe o codigo está incorreto";
-        }
+        portaAberta = false;
     }
 }
