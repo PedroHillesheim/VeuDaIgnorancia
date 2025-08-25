@@ -7,21 +7,19 @@ public class Codigo : MonoBehaviour
     public GameObject painelCodigo;
     public TMP_Text textoCodigoDigitado;
     public TMP_Text textoResultado;
+    public UnityEvent winSreen;
 
-    [Header("Configuração")]
     public string codigoCorreto = "1234";
     private string codigoAtual = "";
 
     public int maxDigitos = 4;
 
-    [Header("Proximidade")]
     public Transform player;
     public Transform areaCodigo;
     public float distanciaMaxima = 3f;
 
-    [Header("Porta")]
     public Transform porta;
-    public Vector3 posicaoAberta;   // Posição para onde a porta deve se mover
+    public Vector3 posicaoAberta;   
     public float velocidadePorta = 2f;
 
     private Vector3 posicaoFechada;
@@ -68,14 +66,13 @@ public class Codigo : MonoBehaviour
             textoResultado.text = "";
         }
 
-        // Movimenta a porta se estiver aberta
         if (portaAberta)
         {
             porta.position = Vector3.MoveTowards(porta.position, posicaoAberta, velocidadePorta * Time.deltaTime);
         }
         else
         {
-            // Opcional: porta fecha automaticamente (volta para posição fechada)
+          
             porta.position = Vector3.MoveTowards(porta.position, posicaoFechada, velocidadePorta * Time.deltaTime);
         }
     }
@@ -95,8 +92,7 @@ public class Codigo : MonoBehaviour
         {
             textoResultado.text = "Parabéns! Você ganhou!";
             textoResultado.color = Color.green;
-
-            AbrirPorta();
+            winSreen.Invoke();
         }
         else
         {
@@ -123,7 +119,7 @@ public class Codigo : MonoBehaviour
         portaAberta = true;
     }
 
-    // Opcional: método para fechar porta (se quiser)
+    
     public void FecharPorta()
     {
         portaAberta = false;
