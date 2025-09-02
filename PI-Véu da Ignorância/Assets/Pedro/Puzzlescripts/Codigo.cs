@@ -18,17 +18,17 @@ public class Codigo : MonoBehaviour
     public Transform areaCodigo;
     public float distanciaMaxima = 3f;
 
-    public Transform porta;
-    public Vector3 posicaoAberta;   
-    public float velocidadePorta = 2f;
+    //public Transform porta;
+    //public Vector3 posicaoAberta;   
+    //public float velocidadePorta = 2f;
 
-    private Vector3 posicaoFechada;
-    private bool portaAberta = false;
+    //private Vector3 posicaoFechada;
+    //private bool portaAberta = false;
 
     void Start()
     {
         painelCodigo.SetActive(false);
-        posicaoFechada = porta.position;
+       // posicaoFechada = porta.position;
         textoResultado.text = " ";
         textoCodigoDigitado.text = " ";
     }
@@ -66,14 +66,14 @@ public class Codigo : MonoBehaviour
             textoResultado.text = "";
         }
 
-        if (portaAberta)
-        {
-            porta.position = Vector3.MoveTowards(porta.position, posicaoAberta, velocidadePorta * Time.deltaTime);
-        }
+        //if (portaAberta)
+        //{
+          //  porta.position = Vector3.MoveTowards(porta.position, posicaoAberta, velocidadePorta * Time.deltaTime);
+        //}
         else
         {
           
-            porta.position = Vector3.MoveTowards(porta.position, posicaoFechada, velocidadePorta * Time.deltaTime);
+          //  porta.position = Vector3.MoveTowards(porta.position, posicaoFechada, velocidadePorta * Time.deltaTime);
         }
     }
 
@@ -116,12 +116,12 @@ public class Codigo : MonoBehaviour
 
     void AbrirPorta()
     {
-        portaAberta = true;
+        //portaAberta = true;
     }
 
     
     public void FecharPorta()
     {
-        portaAberta = false;
+        //portaAberta = false;
     }
 }
