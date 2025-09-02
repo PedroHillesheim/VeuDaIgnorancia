@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pixilart-sprite (1)_0: -2053989363645956680
+      pixilart-sprite (1)_1: -996435834641883867
+      pixilart-sprite (1)_2: -1493032810441443054
+      pixilart-sprite (1)_3: 4089393204286459484
+      pixilart-sprite (1)_4: 2512838835981015971
+      pixilart-sprite (1)_5: 1733115899004987713
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
