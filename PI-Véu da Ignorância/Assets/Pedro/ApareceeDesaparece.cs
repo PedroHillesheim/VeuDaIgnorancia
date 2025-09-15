@@ -22,7 +22,7 @@ public class ApareceeDesaparece : MonoBehaviour
             jaApareceu = true;
             Debug.Log("Personagem apareceu!");
             // Avisa o controlador do jogo que encontrou um erro
-            FindObjectOfType<PuzzleGameController>().CliqueEmErro();
+            //FindObjectOfType<PuzzleGameController>().CliqueEmErro();
         }
     }
 

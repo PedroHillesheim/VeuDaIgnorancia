@@ -93,6 +93,7 @@ public class Codigo : MonoBehaviour
             textoResultado.text = "Parabéns! Você ganhou!";
             textoResultado.color = Color.green;
             winSreen.Invoke();
+
         }
         else
         {
