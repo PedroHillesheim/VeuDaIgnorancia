@@ -123,10 +123,6 @@ public class Codigo : MonoBehaviour
     {
         textoCodigoDigitado.text = codigoAtual;
     }
-    public void ResetButton()
-    {
-        loseScreen.SetActive(false);
-    }
 
     //void AbrirPorta()
     //{
