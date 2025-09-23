@@ -4,10 +4,13 @@ using UnityEngine.Events;
 
 public class Codigo : MonoBehaviour
 {
+    public int tentativas = 0;
     public GameObject painelCodigo;
     public TMP_Text textoCodigoDigitado;
     public TMP_Text textoResultado;
     public UnityEvent winSreen;
+    public GameObject loseScreen;
+    public TMP_Text textoTentetivas;
 
     public string codigoCorreto = "1234";
     private string codigoAtual = "";
@@ -35,6 +38,7 @@ public class Codigo : MonoBehaviour
 
     void Update()
     {
+        textoTentetivas.text = tentativas.ToString();
         float distancia = Vector3.Distance(player.position, areaCodigo.position);
 
         if (distancia <= distanciaMaxima)
@@ -70,10 +74,14 @@ public class Codigo : MonoBehaviour
         //{
           //  porta.position = Vector3.MoveTowards(porta.position, posicaoAberta, velocidadePorta * Time.deltaTime);
         //}
-        else
-        {
+        //else
+        //{
           
           //  porta.position = Vector3.MoveTowards(porta.position, posicaoFechada, velocidadePorta * Time.deltaTime);
+        //}
+        if (tentativas >= 3)
+        {
+            loseScreen.SetActive(true);
         }
     }
 
@@ -93,12 +101,13 @@ public class Codigo : MonoBehaviour
             textoResultado.text = "Parabéns! Você ganhou!";
             textoResultado.color = Color.green;
             winSreen.Invoke();
-
+            painelCodigo.SetActive(false);
         }
         else
         {
             textoResultado.text = "Código incorreto.";
             textoResultado.color = Color.red;
+            tentativas++;
         }
 
         LimparCodigo();
@@ -114,15 +123,19 @@ public class Codigo : MonoBehaviour
     {
         textoCodigoDigitado.text = codigoAtual;
     }
-
-    void AbrirPorta()
+    public void ResetButton()
     {
-        //portaAberta = true;
+        loseScreen.SetActive(false);
     }
+
+    //void AbrirPorta()
+    //{
+        //portaAberta = true;
+    //}/
 
     
-    public void FecharPorta()
-    {
+    //public void FecharPorta()
+    //{
         //portaAberta = false;
-    }
+    //}
 }
