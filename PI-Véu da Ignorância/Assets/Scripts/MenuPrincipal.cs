@@ -8,8 +8,8 @@ public class MenuPrincipal : MonoBehaviour
         SceneManager.LoadScene("Jogo");
     }
 
-    public void Creditos()
+    public void CreditosVoltar()
     {
-        SceneManager.LoadScene("Credits");
+        SceneManager.LoadScene("Titulo");
     }
 }
