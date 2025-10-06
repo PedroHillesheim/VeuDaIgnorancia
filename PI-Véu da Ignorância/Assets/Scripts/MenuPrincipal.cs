@@ -12,15 +12,4 @@ public class MenuPrincipal : MonoBehaviour
     {
         SceneManager.LoadScene("Credits");
     }
-
-    public void VoltarMenu()
-    {
-        SceneManager.LoadScene("MenuPrincipal");
-    }
-
-    public void Sair()
-    {
-        Application.Quit();
-        Debug.Log("Jogo encerrado.");
-    }
 }
