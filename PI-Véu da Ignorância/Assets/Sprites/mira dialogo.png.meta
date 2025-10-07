@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mira dialogo_0: -3659211903985308309
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
