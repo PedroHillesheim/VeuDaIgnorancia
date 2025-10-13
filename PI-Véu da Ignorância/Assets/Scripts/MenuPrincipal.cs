@@ -5,7 +5,7 @@ public class MenuPrincipal : MonoBehaviour
 {
     public void Jogar()
     {
-        SceneManager.LoadScene("Jogo");
+        SceneManager.LoadScene("Dialogue");
     }
     public void Creditos()
     {
@@ -14,5 +14,6 @@ public class MenuPrincipal : MonoBehaviour
     public void CreditosVoltar()
     {
         SceneManager.LoadScene("Titulo");
+
     }
 }
