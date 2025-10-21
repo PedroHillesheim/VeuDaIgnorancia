@@ -23,8 +23,6 @@ public class ReconstrucaoCodigo : MonoBehaviour
                 currentItem = null;
                 Debug.Log("Item coletado! (" + collectedItems + "/" + totalItems + ")");
             }
-
-            // Se já pegou todos os itens e está na zona de vitória
             else if (isNearVictoryZone && collectedItems >= totalItems)
             {
                 ShowVictory();
