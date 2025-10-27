@@ -1072,7 +1072,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textPalavraEscondida: {fileID: 1637887796}
   textLetrasErradas: {fileID: 1848593711}
-  palavraSecreta: Teste
+  palavraSecreta: Mira Schendel
   winScreen:
     m_PersistentCalls:
       m_Calls:
