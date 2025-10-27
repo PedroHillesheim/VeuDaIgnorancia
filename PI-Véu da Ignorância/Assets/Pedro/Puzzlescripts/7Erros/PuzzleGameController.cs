@@ -1,4 +1,4 @@
-using TMPro;
+Ôªøusing TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -6,62 +6,71 @@ using System.Collections.Generic;
 
 public class PuzzleGameController : MonoBehaviour
 {
+    [Header("Status do jogo")]
     public int errosEncontrados = 0;
     public int tentativasUsadas = 0;
     [SerializeField] int maxTentativas = 10;
+
+    [Header("Eventos")]
     public UnityEvent eventoVitoria;
     public UnityEvent eventoDerrota;
+
+    [Header("Refer√™ncias UI")]
     public TMP_Text textoRestantes;
     public TMP_Text textoAcertos;
 
-    // Lista para guardar todos os botıes de erro que foram desativados
-    private List<Button> botoesDesativados = new List<Button>();
-    private List<Color> coresOriginais = new List<Color>();
+    private readonly List<Button> botoesDesativados = new();
+    private readonly List<Color> coresOriginais = new();
+    private readonly List<GameObject> imagensAtivas = new();
 
     void Update()
     {
-        textoAcertos.text = $"Erros Encontrados: {errosEncontrados}";
-        textoRestantes.text = $"Tentativas Restantes: {maxTentativas - tentativasUsadas}";
+        if (textoAcertos != null)
+            textoAcertos.text = $"Erros Encontrados: {errosEncontrados}";
+
+        if (textoRestantes != null)
+            textoRestantes.text = $"Tentativas Restantes: {maxTentativas - tentativasUsadas}";
 
         if (errosEncontrados >= 7)
-        {
-            eventoVitoria.Invoke();
-        }
+            eventoVitoria?.Invoke();
         else if (tentativasUsadas >= maxTentativas)
-        {
-            eventoDerrota.Invoke();
-        }
+            eventoDerrota?.Invoke();
     }
 
-    // MÈtodo para quando clicar em um ERRO
     public void CliqueEmErro(Button botaoClicado)
     {
-        // SÛ conta se o bot„o ainda estiver ativo
-        if (botaoClicado.interactable)
+        if (botaoClicado == null || !botaoClicado.interactable) return;
+
+        botoesDesativados.Add(botaoClicado);
+        coresOriginais.Add(botaoClicado.image.color);
+
+        botaoClicado.interactable = false;
+        botaoClicado.image.color = Color.green;
+        errosEncontrados++;
+
+        // üîç Encontra o filho chamado "ImagemSobreposta"
+        Transform imagemSobreposta = botaoClicado.transform.Find("ImagemSobreposta");
+        if (imagemSobreposta != null)
         {
-            // Guarda o bot„o e sua cor original para poder resetar depois
-            botoesDesativados.Add(botaoClicado);
-            coresOriginais.Add(botaoClicado.image.color);
-            // Desativa o bot„o e muda a cor
-            botaoClicado.interactable = false;
-            botaoClicado.image.color = Color.green;
-            errosEncontrados++;
+            imagemSobreposta.gameObject.SetActive(true);
+            imagensAtivas.Add(imagemSobreposta.gameObject);
+        }
+        else
+        {
+            Debug.LogWarning($"Nenhum filho chamado 'ImagemSobreposta' encontrado em {botaoClicado.name}");
         }
     }
 
-    // MÈtodo para quando clicar em algo que N√O È um erro
     public void CliqueEmNaoErro()
     {
         tentativasUsadas++;
     }
 
-    // M…TODO NOVO PARA REINICIAR O JOGO
     public void ReiniciarJogo()
     {
-        // Reseta as vari·veis
         errosEncontrados = 0;
         tentativasUsadas = 0;
-        // Reativa todos os botıes que foram desativados
+
         for (int i = 0; i < botoesDesativados.Count; i++)
         {
             if (botoesDesativados[i] != null)
@@ -70,9 +79,17 @@ public class PuzzleGameController : MonoBehaviour
                 botoesDesativados[i].image.color = coresOriginais[i];
             }
         }
-        // Limpa as listas
+
+        foreach (var img in imagensAtivas)
+        {
+            if (img != null)
+                img.SetActive(false);
+        }
+
         botoesDesativados.Clear();
         coresOriginais.Clear();
-        Debug.Log("Jogo reiniciado! Todos os botıes reativados.");
+        imagensAtivas.Clear();
+
+        Debug.Log("üîÅ Jogo reiniciado com sucesso!");
     }
 }

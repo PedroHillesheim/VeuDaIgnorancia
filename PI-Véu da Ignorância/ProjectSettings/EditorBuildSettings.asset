@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/victoria.unity
     guid: 9f12e324f6697e94a9d276647b4e5cc9
   - enabled: 1
-    path: Assets/Scenes/Pedro.unity
+    path: Assets/Scenes/7erros.unity
     guid: bf93a73ceeda805498917cadde98cf65
   - enabled: 1
     path: Assets/Scenes/Maria.unity
