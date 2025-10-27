@@ -250,6 +250,7 @@ GameObject:
   - component: {fileID: 460416446}
   - component: {fileID: 460416445}
   - component: {fileID: 460416448}
+  - component: {fileID: 460416449}
   m_Layer: 5
   m_Name: Jogar
   m_TagString: Untagged
@@ -299,8 +300,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.7372549, g: 0.6666667, b: 0.59607846, a: 1}
-    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.764151, g: 0.70107245, b: 0.637994, a: 1}
+    m_PressedColor: {r: 0.6415094, g: 0.56434673, b: 0.48718402, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -383,6 +384,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1314d4380c9ef4e931bc51d8b79bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &460416449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460416443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b227fc33918d93b42835c88a2a828eaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::way
+  axis: 0
+  maxAngle: 0
+  speed: 0
+  phaseOffset: 0
+  useUnscaledTime: 0
+  startPaused: 0
+  hoverScale: 1.1
+  scaleSpeed: 6
 --- !u!1 &885269157
 GameObject:
   m_ObjectHideFlags: 0
@@ -765,6 +786,7 @@ GameObject:
   - component: {fileID: 1103756574}
   - component: {fileID: 1103756573}
   - component: {fileID: 1103756576}
+  - component: {fileID: 1103756577}
   m_Layer: 5
   m_Name: Creditos
   m_TagString: Untagged
@@ -814,8 +836,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.7372549, g: 0.6666667, b: 0.59607846, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.7647059, g: 0.7019608, b: 0.6392157, a: 1}
+    m_PressedColor: {r: 0.6431373, g: 0.5647059, b: 0.4862745, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -898,6 +920,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1314d4380c9ef4e931bc51d8b79bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1103756577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103756571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b227fc33918d93b42835c88a2a828eaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::way
+  axis: 0
+  maxAngle: 0
+  speed: 0
+  phaseOffset: 0
+  useUnscaledTime: 0
+  startPaused: 0
+  hoverScale: 1.1
+  scaleSpeed: 6
 --- !u!1 &1164085236
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,9 +970,9 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 786317d79c1d8f045ba8273062ef9902, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.222
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1314,6 +1356,7 @@ GameObject:
   - component: {fileID: 1709529800}
   - component: {fileID: 1709529799}
   - component: {fileID: 1709529802}
+  - component: {fileID: 1709529803}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -1363,8 +1406,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.7372549, g: 0.6666667, b: 0.59607846, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.7647059, g: 0.7019608, b: 0.6392157, a: 1}
+    m_PressedColor: {r: 0.6431373, g: 0.5647059, b: 0.4862745, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1447,6 +1490,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a8dd1c2bc08bec4db7c9404ad870430, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1709529803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709529797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b227fc33918d93b42835c88a2a828eaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::way
+  axis: 0
+  maxAngle: 0
+  speed: 0
+  phaseOffset: 0
+  useUnscaledTime: 0
+  startPaused: 0
+  hoverScale: 1.1
+  scaleSpeed: 6
 --- !u!1 &1869495692
 GameObject:
   m_ObjectHideFlags: 0
