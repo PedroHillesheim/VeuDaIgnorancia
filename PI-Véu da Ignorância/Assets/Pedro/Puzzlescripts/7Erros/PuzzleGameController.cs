@@ -45,7 +45,7 @@ public class PuzzleGameController : MonoBehaviour
         coresOriginais.Add(botaoClicado.image.color);
 
         botaoClicado.interactable = false;
-        botaoClicado.image.color = Color.green;
+        botaoClicado.image.color = Color.white;
         errosEncontrados++;
 
         // 🔍 Encontra o filho chamado "ImagemSobreposta"
