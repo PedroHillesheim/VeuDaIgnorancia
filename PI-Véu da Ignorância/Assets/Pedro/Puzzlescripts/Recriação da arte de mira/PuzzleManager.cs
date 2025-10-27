@@ -24,7 +24,6 @@ public class PuzzleManager : MonoBehaviour
                 return;
         }
 
-        // Se chegou aqui, todas as peças estão no lugar
         victoryText.gameObject.SetActive(true);
         victoryText.text = "Parabéns! Puzzle completo!";
     }
