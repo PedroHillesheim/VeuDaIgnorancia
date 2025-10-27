@@ -2,7 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class Dialogo : MonoBehaviour
+public class Dialogue: MonoBehaviour
 {
     public TMP_Text textoDialogo;
     public string[] frases;

@@ -1178,15 +1178,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogo
   textoDialogo: {fileID: 320670496}
   frases:
-  - "S\xE9rio que trouxeram a gente pra esse lugar velho e mofado?"
-  - " (pausa conferindo o lugar)U\xE9\u2026 onde foi todo mundo? N\xE3o acredito\u2026
-    s\xF3 eu consegui me perder neste fim de mundo. Ok, Lucas\u2026 respira\u2026
-    \xE9 s\xF3 seguir o caminho de volta Por que parece que esse corredor n\xE3o
-    tem fim?"
-  - "Algu\xE9m a\xED? \u2026 Isso n\xE3o \xE9 engra\xE7ado. Juro que ouvi passos
-    atr\xE1s de mim\u2026 A porta estava aberta h\xE1 pouco\u2026 Como ela trancou
-    sozinha? Tem alguma coisa errada com esse museu podre. Frio\u2026 muito frio\u2026
-    parece que o ar t\xE1 me apertando."
+  - "Meu Deus\u2026 mas que merd..?! "
+  - "N\xE3o\u2026 n\xE3o \xE9 gente\u2026 n\xE3o \xE9 poss\xEDvel"
+  - "A\u2026 a pele dela\u2026 os olhos\u2026"
+  - 'Preciso sair desse lugar... URGENTE '
   painelDialogo: {fileID: 1729079316}
 --- !u!114 &1729079320
 MonoBehaviour:
@@ -1411,7 +1406,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -87
-  m_Sprite: {fileID: -2875135749474739494, guid: b5119ca9daec65a4a9dcadbf2a4a7756, type: 3}
+  m_Sprite: {fileID: 466211658389813085, guid: bcd966676ff097d4fbc9e089d048e0db, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1431,8 +1426,8 @@ Transform:
   m_GameObject: {fileID: 1879814893}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.16, y: -0.17, z: 0}
-  m_LocalScale: {x: 3.2282524, y: 2.8440902, z: 3.2282524}
+  m_LocalPosition: {x: -0.03, y: 0.26, z: 0}
+  m_LocalScale: {x: 6.5483003, y: 5.769052, z: 6.5483003}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
