@@ -8,6 +8,8 @@ public class PuzzlePiece : MonoBehaviour
     private Vector3 offset;
     private bool dragging = false;
 
+    public bool IsPlaced { get; internal set; }
+
     void Start()
     {
         // Inicializa o correto para o lugar que a peça deve estar

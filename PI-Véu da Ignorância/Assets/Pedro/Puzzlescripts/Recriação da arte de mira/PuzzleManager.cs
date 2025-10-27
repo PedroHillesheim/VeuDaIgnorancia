@@ -30,6 +30,7 @@ public class PuzzleManager : MonoBehaviour
 
     private bool pieceIsPlaced(PuzzlePiece piece)
     {
-        return piece.isPlaced;
+
+        return piece.IsPlaced;
     }
 }
