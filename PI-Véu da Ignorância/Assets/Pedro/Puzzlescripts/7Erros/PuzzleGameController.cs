@@ -48,7 +48,7 @@ public class PuzzleGameController : MonoBehaviour
         botaoClicado.image.color = Color.white;
         errosEncontrados++;
 
-        // 🔍 Encontra o filho chamado "ImagemSobreposta"
+       
         Transform imagemSobreposta = botaoClicado.transform.Find("ImagemSobreposta");
         if (imagemSobreposta != null)
         {
@@ -90,6 +90,6 @@ public class PuzzleGameController : MonoBehaviour
         coresOriginais.Clear();
         imagensAtivas.Clear();
 
-        Debug.Log("🔁 Jogo reiniciado com sucesso!");
+        Debug.Log(" Jogo reiniciado com sucesso!");
     }
 }
