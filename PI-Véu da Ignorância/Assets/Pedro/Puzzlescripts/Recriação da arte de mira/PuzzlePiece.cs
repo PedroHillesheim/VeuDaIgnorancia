@@ -1,48 +1,50 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class PuzzlePiece : MonoBehaviour
 {
-    public Vector3 correctPosition; // Posição correta da peça
-    public float snapDistance = 0.5f; // Distância para encaixar
-    private bool isPlaced = false;
+    public Vector3 correctPosition;
+    public float snapDistance = 0.5f;
+
+    public bool IsPlaced { get; private set; } = false;
+
     private Vector3 offset;
     private bool dragging = false;
 
-    public bool IsPlaced { get; internal set; }
+    private Collider2D col2D;
+    private Collider col3D;
 
-    void Start()
+    void Awake()
     {
-        // Inicializa o correto para o lugar que a peça deve estar
-        correctPosition = transform.position;
+        col2D = GetComponent<Collider2D>();
+        col3D = GetComponent<Collider>();
     }
 
     void OnMouseDown()
     {
-        if (!isPlaced)
-        {
-            dragging = true;
-            offset = transform.position - GetMouseWorldPos();
-        }
+        if (IsPlaced) return;
+
+        dragging = true;
+        offset = transform.position - GetMouseWorldPos();
     }
 
     void OnMouseUp()
     {
-        if (!isPlaced)
+        if (IsPlaced) return;
+
+        dragging = false;
+
+        if (Vector3.Distance(transform.position, correctPosition) <= snapDistance)
         {
-            dragging = false;
-            // Verifica se a peça está próxima da posição correta
-            if (Vector3.Distance(transform.position, correctPosition) <= snapDistance)
-            {
-                transform.position = correctPosition;
-                isPlaced = true;
-                PuzzleManager.Instance.CheckCompletion();
-            }
+            transform.position = correctPosition;
+            IsPlaced = true;
+            LockPiece();
+            PuzzleManager.Instance.CheckCompletion();
         }
     }
 
     void Update()
     {
-        if (dragging && !isPlaced)
+        if (dragging && !IsPlaced)
         {
             transform.position = GetMouseWorldPos() + offset;
         }
@@ -53,5 +55,12 @@ public class PuzzlePiece : MonoBehaviour
         Vector3 mousePoint = Input.mousePosition;
         mousePoint.z = Camera.main.WorldToScreenPoint(transform.position).z;
         return Camera.main.ScreenToWorldPoint(mousePoint);
+    }
+
+    void LockPiece()
+    {
+        dragging = false;
+        if (col2D != null) col2D.enabled = false;
+        if (col3D != null) col3D.enabled = false;
     }
 }
