@@ -7,7 +7,6 @@ public class ReconstrucaoCodigo : MonoBehaviour
     public int totalItems = 3;
     private int collectedItems = 0;
     private GameObject currentItem = null;
-    private GameObject victoryZone = null;
     public TMP_Text collectItemText;
     public UnityEvent victoryPanel;
     private bool isNearVictoryZone = false;
