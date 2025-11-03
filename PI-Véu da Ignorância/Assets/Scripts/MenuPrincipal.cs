@@ -16,15 +16,15 @@ public class MenuPrincipal : MonoBehaviour
         SceneManager.LoadScene("Titulo");
 
     }
-    public void LL()
+    public void Cena1()
     {
         SceneManager.LoadScene("mira1");
     }
-    public void AAA()
+    public void Cena2()
     {
         SceneManager.LoadScene("Dialogue 2");
     }
-    public void NN()
+    public void Cena3()
     {
         SceneManager.LoadScene("Dialogue 3");
 
