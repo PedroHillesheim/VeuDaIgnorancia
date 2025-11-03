@@ -1440,7 +1440,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1877094966}
   - component: {fileID: 1877094965}
-  - component: {fileID: 1877094967}
   - component: {fileID: 1877094968}
   m_Layer: 0
   m_Name: Square
@@ -1522,23 +1521,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!111 &1877094967
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1877094963}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Animation: {fileID: 7400000, guid: 08982b51f6d617548b3d845c734ea98e, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: d3ecbd77d2400e04aaac0cad167407ac, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_UpdateMode: 0
-  m_CullingType: 0
 --- !u!95 &1877094968
 Animator:
   serializedVersion: 7
