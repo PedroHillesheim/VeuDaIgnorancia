@@ -208,7 +208,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Palavras presas? Que diabos ela t\xE1 falando\u2026?"
+  m_text: "Isso \xE9 um jogo? Ela quer que eu\u2026 adivinhe?\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1324,12 +1324,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogo
   textoDialogo: {fileID: 320670496}
   frases:
-  - "Palavras presas? Que diabos ela t\xE1 falando\u2026?"
-  - "Esse lugar parece\u2026 respirar."
-  - "Ok\u2026 Lucas\u2026 voc\xEA s\xF3 precisa sair daqui. Nada de entrar em joguinhos
-    de fantasma."
-  - "Por que\u2026 tudo parece me ouvir?"
-  - "(algo chama sua aten\xE7\xE3o mais que o normal entre os quadros velhos)"
+  - "Isso \xE9 um jogo? Ela quer que eu\u2026 adivinhe\u2026? "
+  - "T\xE1. Se eu acertar\u2026 talvez alguma coisa abra \u201COk\u2026 pensa\u2026
+    pensa\u2026"
+  - "Mas se eu errar\u2026 o que exatamente muda aqui"
+  - "Merda\u2026 isso t\xE1 ficando mais frio."
+  - "Ok\u2026 pensa\u2026 pensa\u2026"
   painelDialogo: {fileID: 1729079316}
 --- !u!114 &1729079320
 MonoBehaviour:
