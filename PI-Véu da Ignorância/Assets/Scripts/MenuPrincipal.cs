@@ -16,4 +16,17 @@ public class MenuPrincipal : MonoBehaviour
         SceneManager.LoadScene("Titulo");
 
     }
+    public void LL()
+    {
+        SceneManager.LoadScene("mira1");
+    }
+    public void AAA()
+    {
+        SceneManager.LoadScene("Dialogue 2");
+    }
+    public void NN()
+    {
+        SceneManager.LoadScene("Dialogue 3");
+
+    }
 }

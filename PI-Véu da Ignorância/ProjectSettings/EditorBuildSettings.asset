@@ -24,8 +24,17 @@ EditorBuildSettings:
     path: Assets/Scenes/victoria.unity
     guid: 9f12e324f6697e94a9d276647b4e5cc9
   - enabled: 1
+    path: Assets/Scenes/mira1.unity
+    guid: cc873d3fb1487584c94fc4c366266043
+  - enabled: 1
     path: Assets/Scenes/7erros.unity
     guid: bf93a73ceeda805498917cadde98cf65
+  - enabled: 1
+    path: Assets/Scenes/Dialogue 2.unity
+    guid: b458c19a65db6a64fb193ace1025f8b9
+  - enabled: 1
+    path: Assets/Scenes/Dialogue 3.unity
+    guid: dd8c6c37e091a2a419c05f649d1bf0b0
   - enabled: 0
     path: Assets/Scenes/Maria.unity
     guid: f0ab32bec93007443ab2e80efa4a74aa
