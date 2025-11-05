@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 26dac13e96f5fa745841bbcb22e18d57
+guid: 526d281ba475b6841b68126c868b8b20
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Witchwoode
+  - Pixelout Personal Use Only
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
