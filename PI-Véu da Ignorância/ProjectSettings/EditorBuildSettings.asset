@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/0.unity
     guid: 2dc151b3eab998544ae99e5e27d77a13
   - enabled: 1
-    path: Assets/Scenes/Dialogo.unity
+    path: Assets/Scenes/1.unity
     guid: 222fd03205699e64aaef5e56dae61ba5
   - enabled: 0
     path: Assets/Scenes/Jogo.unity
