@@ -14,11 +14,14 @@ public class Dialogue : MonoBehaviour
     private int indice = 0;
     public GameObject painelDialogo;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
     void Start()
     {
         if (frases.Length > 0)
 =======
+=======
+>>>>>>> Stashed changes
     public AudioSource[] Fala;
     public AudioSource Ambient;
     public int CurrentAudio = 0;
@@ -31,6 +34,9 @@ public class Dialogue : MonoBehaviour
         }
 
         if (frases != null && frases.Length > 0)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         {
             textoDialogo.text = frases[0];
@@ -54,6 +60,10 @@ public class Dialogue : MonoBehaviour
         indice++;
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+        // Verifica se ainda há frases
+>>>>>>> Stashed changes
 =======
         // Verifica se ainda há frases
 >>>>>>> Stashed changes
@@ -72,6 +82,7 @@ public class Dialogue : MonoBehaviour
             // Fim do diálogo
             painelDialogo.SetActive(false);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 
          
@@ -82,6 +93,11 @@ public class Dialogue : MonoBehaviour
             Debug.Log("Fim do diálogo!");
         }
     }
+=======
+            Debug.Log("Fim do diálogo!");
+        }
+    }
+>>>>>>> Stashed changes
 
     public void SomAtual()
     {
@@ -97,4 +113,7 @@ public class Dialogue : MonoBehaviour
 
 
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

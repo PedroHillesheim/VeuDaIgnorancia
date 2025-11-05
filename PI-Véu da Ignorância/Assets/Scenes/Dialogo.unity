@@ -120,6 +120,7 @@ NavMeshSettings:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
 <<<<<<< Updated upstream:PI-Véu da Ignorância/Assets/Scenes/Dialogo.unity
+<<<<<<< Updated upstream:PI-Véu da Ignorância/Assets/Scenes/Dialogo.unity
 --- !u!1 &249724101
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,6 +153,8 @@ Transform:
   - {fileID: 1729079317}
   m_Father: {fileID: 787826416}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> Stashed changes:PI-Véu da Ignorância/Assets/Scenes/2.unity
 =======
 >>>>>>> Stashed changes:PI-Véu da Ignorância/Assets/Scenes/2.unity
 --- !u!1 &320670494
@@ -662,8 +665,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
 <<<<<<< Updated upstream:PI-Véu da Ignorância/Assets/Scenes/Dialogo.unity
+<<<<<<< Updated upstream:PI-Véu da Ignorância/Assets/Scenes/Dialogo.unity
   - {fileID: 249724103}
   - {fileID: 1895387750}
+=======
+  - {fileID: 1729079317}
+>>>>>>> Stashed changes:PI-Véu da Ignorância/Assets/Scenes/2.unity
 =======
   - {fileID: 1729079317}
 >>>>>>> Stashed changes:PI-Véu da Ignorância/Assets/Scenes/2.unity
@@ -1939,6 +1946,7 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< Updated upstream:PI-Véu da Ignorância/Assets/Scenes/Dialogo.unity
+<<<<<<< Updated upstream:PI-Véu da Ignorância/Assets/Scenes/Dialogo.unity
 --- !u!1 &1895387749
 GameObject:
   m_ObjectHideFlags: 0
@@ -2203,6 +2211,8 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 =======
 >>>>>>> Stashed changes:PI-Véu da Ignorância/Assets/Scenes/2.unity
+=======
+>>>>>>> Stashed changes:PI-Véu da Ignorância/Assets/Scenes/2.unity
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2213,9 +2223,12 @@ SceneRoots:
   - {fileID: 1879814895}
   - {fileID: 787826416}
 <<<<<<< Updated upstream:PI-Véu da Ignorância/Assets/Scenes/Dialogo.unity
+<<<<<<< Updated upstream:PI-Véu da Ignorância/Assets/Scenes/Dialogo.unity
   - {fileID: 1967322783}
   - {fileID: 1877094966}
 =======
+=======
+>>>>>>> Stashed changes:PI-Véu da Ignorância/Assets/Scenes/2.unity
   - {fileID: 1633170271}
   - {fileID: 1108693026}
 >>>>>>> Stashed changes:PI-Véu da Ignorância/Assets/Scenes/2.unity
