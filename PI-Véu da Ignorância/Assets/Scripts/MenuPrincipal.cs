@@ -9,11 +9,11 @@ public class MenuPrincipal : MonoBehaviour
     }
     public void Creditos()
     {
-        SceneManager.LoadScene("Credits");
+        SceneManager.LoadScene("0 (1)");
     }
     public void CreditosVoltar()
     {
-        SceneManager.LoadScene("Titulo");
+        SceneManager.LoadScene("0");
 
     }
     public void Cena1()
