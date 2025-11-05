@@ -176,7 +176,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "S\xE9rio que trouxeram a gente pra esse lugar velho e mofado?"
+  m_text: "S\xE9rio que trouxeram a gente pra esse lugar velho e mofado?(pausa conferindo
+    o lugar)U\xE9\u2026 onde foi todo mundo?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7cdc6b5010b1d724fb6688211bfd8dba, type: 2}
   m_sharedMaterial: {fileID: -3033086510672816437, guid: 7cdc6b5010b1d724fb6688211bfd8dba, type: 2}
@@ -312,10 +313,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "(pausa conferindo o lugar)U\xE9\u2026 onde foi todo mundo? N\xE3o acredito\u2026
-    s\xF3 eu consegui me perder neste fim de mundo. Ok, Lucas\u2026 respira\u2026
-    \xE9 s\xF3 seguir o caminho de volta Por que parece que esse corredor n\xE3o
-    tem fim?"
+  m_text: " N\xE3o acredito\u2026 s\xF3 eu consegui me perder neste fim de mundo. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1457,6 +1455,7 @@ GameObject:
   - component: {fileID: 1633170270}
   - component: {fileID: 1633170269}
   - component: {fileID: 1633170268}
+  - component: {fileID: 1633170272}
   m_Layer: 0
   m_Name: AudioSorceGlobal
   m_TagString: Untagged
@@ -1770,6 +1769,103 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1633170272
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633170267}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: e2b5bde4289f02c41a39b5e57f23cc80, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1729079316
 GameObject:
   m_ObjectHideFlags: 0
@@ -1865,15 +1961,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   textoDialogo: {fileID: 320670496}
   frases:
-  - "S\xE9rio que trouxeram a gente pra esse lugar velho e mofado?"
-  - "(pausa conferindo o lugar)U\xE9\u2026 onde foi todo mundo? N\xE3o acredito\u2026
-    s\xF3 eu consegui me perder neste fim de mundo. Ok, Lucas\u2026 respira\u2026
-    \xE9 s\xF3 seguir o caminho de volta Por que parece que esse corredor n\xE3o
-    tem fim?"
-  - "Algu\xE9m a\xED? \u2026 Isso n\xE3o \xE9 engra\xE7ado. Juro que ouvi passos
-    atr\xE1s de mim\u2026 A porta estava aberta h\xE1 pouco\u2026 Como ela trancou
-    sozinha? Tem alguma coisa errada com esse museu podre. Frio\u2026 muito frio\u2026
-    parece que o ar t\xE1 me apertando."
+  - "S\xE9rio que trouxeram a gente pra esse lugar velho e mofado?(pausa conferindo
+    o lugar)U\xE9\u2026 onde foi todo mundo?"
+  - " N\xE3o acredito\u2026 s\xF3 eu consegui me perder neste fim de mundo. "
+  - "Ok, Lucas\u2026 respira\u2026 \xE9 s\xF3 seguir o caminho de volta "
+  - "Por que parece que esse corredor n\xE3o tem fim?"
   painelDialogo: {fileID: 1729079316}
   Fala:
   - {fileID: 1633170270}
