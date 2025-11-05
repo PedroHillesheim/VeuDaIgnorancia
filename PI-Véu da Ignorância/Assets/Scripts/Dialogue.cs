@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
+using static UnityEditor.ShaderData;
 using System;
 
 public class Dialogue : MonoBehaviour
@@ -10,6 +11,20 @@ public class Dialogue : MonoBehaviour
     public string[] frases;
     private int indice = 0;
     public GameObject painelDialogo;
+    public AudioSource [] Fala;
+    public AudioSource Ambient;
+    public int CurrentAudio = 0;
+
+    void Start()
+    {
+        Ambient.Play();
+        
+        if (frases.Length > 0)
+=======
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     public AudioSource[] Fala;
     public AudioSource Ambient;
     public int CurrentAudio = 0;
@@ -22,17 +37,25 @@ public class Dialogue : MonoBehaviour
         }
 
         if (frases != null && frases.Length > 0)
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
         {
             textoDialogo.text = frases[0];
         }
         else
         {
-            Debug.LogWarning("Nenhuma frase foi atribuída ao diálogo!");
+            Debug.LogWarning("Nenhuma frase foi atribuï¿½da ao diï¿½logo!");
         }
     }
 
     void Update()
     {
+        SomAtual();
         if (Input.GetKeyDown(KeyCode.E))
         {
             ProximaFrase();
@@ -41,14 +64,14 @@ public class Dialogue : MonoBehaviour
 
     void ProximaFrase()
     {
+        
         indice++;
-
-        // Verifica se ainda há frases
+        
         if (indice < frases.Length)
         {
             textoDialogo.text = frases[indice];
 
-            // Só toca o áudio se existir um correspondente
+            // Sï¿½ toca o ï¿½udio se existir um correspondente
             if (indice < Fala.Length && Fala[indice] != null)
             {
                 Fala[indice].Play();
@@ -56,20 +79,26 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
-            // Fim do diálogo
+            // Fim do diï¿½logo
             painelDialogo.SetActive(false);
-            Debug.Log("Fim do diálogo!");
-        }
-    }
+            
+            
 
+         
+        }
+
+    }
     public void SomAtual()
     {
-        // Garante que não vá além do número de áudios
-        if (CurrentAudio < Fala.Length && Fala[CurrentAudio] != null)
+
+        if (CurrentAudio < Fala.Length)
         {
-            Fala[CurrentAudio].Play();
-            Invoke(nameof(SomAtual), Fala[CurrentAudio].clip.length);
-            CurrentAudio++;
+            Fala[CurrentAudio].Play(); // Toca o ï¿½udio atual
+            Invoke(nameof(SomAtual), Fala[CurrentAudio].clip.length); // Chama o prï¿½ximo apï¿½s o tï¿½rmino
+            CurrentAudio++; // Avanï¿½a para o prï¿½ximo ï¿½udio
         }
     }
 }
+
+
+   

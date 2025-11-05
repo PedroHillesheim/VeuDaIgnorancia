@@ -4,66 +4,52 @@ using UnityEngine.Events;
 
 public class PuzzleManager : MonoBehaviour
 {
-    public static PuzzleManager Instance;
+    public static PuzzleManager Instance { get; private set; }
 
-    [Header("Peças do Puzzle")]
-    public PuzzlePiece[] puzzlePieces;
-
-    [Header("Contadores")]
-    [Tooltip("Número máximo de peças no puzzle")]
-    public int maxPieces = 8;
-
-    [Tooltip("Número de peças já colocadas corretamente")]
-    public int placedPieces = 0;
+    public int totalPieces = 0;       // Total de peças do quebra-cabeça
+    public int placedPieces = 0;      // Quantas já foram colocadas
 
     [Header("Tela de Vitória")]
-    [Tooltip("Painel que aparece quando o puzzle é completado")]
-    public GameObject victoryPanel;
+    public GameObject victoryScreen;  // UI ou painel a ser exibido
 
-    [Tooltip("Evento disparado ao completar o puzzle")]
-    public UnityEvent OnPuzzleCompleted;
-
-    void Awake()
+    private void Awake()
     {
+        // Define a instância única
         if (Instance == null)
             Instance = this;
         else
             Destroy(gameObject);
+    }
 
-        if (victoryPanel != null)
-            victoryPanel.SetActive(false);
-
-        // Se o array de peças tiver mais peças que o valor padrão, ajusta automaticamente
-        if (puzzlePieces != null && puzzlePieces.Length > 0)
-            maxPieces = puzzlePieces.Length;
+    void Start()
+    {
+        // Certifica que a tela de vitória começa oculta
+        if (victoryScreen != null)
+            victoryScreen.SetActive(false);
     }
 
     public void CheckCompletion()
     {
-        // Atualiza a contagem de peças colocadas
-        placedPieces = 0;
-
-        foreach (var piece in puzzlePieces)
+        // Verifica se todas as peças foram colocadas
+        if (placedPieces >= totalPieces)
         {
-            if (piece.IsPlaced)
-                placedPieces++;
-        }
-
-        // Exibe no console o progresso (para debug)
-        Debug.Log($"Peças colocadas: {placedPieces}/{maxPieces}");
-
-        // ✅ Condição de vitória (como você pediu)
-        if (placedPieces >= maxPieces)
-        {
-            Debug.Log("🎉 Puzzle completo!");
             ShowVictoryScreen();
-            OnPuzzleCompleted.Invoke();
         }
     }
 
-    private void ShowVictoryScreen()
+    void ShowVictoryScreen()
     {
-        if (victoryPanel != null)
-            victoryPanel.SetActive(true);
+        Debug.Log("🎉 Quebra-cabeça completo!");
+        if (victoryScreen != null)
+        {
+            victoryScreen.SetActive(true);
+        }
+        else
+        {
+            Debug.LogWarning("Nenhum objeto de tela de vitória atribuído!");
+        }
+
+        // Opcional: mudar de cena automaticamente
+        // SceneManager.LoadScene("CenaDeVitoria");
     }
 }
