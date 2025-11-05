@@ -9,15 +9,10 @@ public class PuzzlePiece : MonoBehaviour
 
     private Vector3 offset;
     private bool dragging = false;
-    PuzzleManager puzzleManager;
+
     private Collider2D col2D;
     private Collider col3D;
 
-    private void Start()
-    {
-        puzzleManager = FindFirstObjectByType(typeof(PuzzleManager)) as PuzzleManager;
-
-    }
     void Awake()
     {
         col2D = GetComponent<Collider2D>();
@@ -40,7 +35,6 @@ public class PuzzlePiece : MonoBehaviour
 
         if (Vector3.Distance(transform.position, correctPosition) <= snapDistance)
         {
-            puzzleManager.placedPieces++;
             transform.position = correctPosition;
             IsPlaced = true;
             LockPiece();

@@ -5,33 +5,28 @@ public class MenuPrincipal : MonoBehaviour
 {
     public void Jogar()
     {
-        SceneManager.LoadScene("1");
+        SceneManager.LoadScene("Dialogo");
     }
     public void Creditos()
     {
-        SceneManager.LoadScene("0 (1)");
+        SceneManager.LoadScene("Credits");
     }
     public void CreditosVoltar()
     {
-        SceneManager.LoadScene("0");
+        SceneManager.LoadScene("Titulo");
 
     }
     public void Cena1()
     {
-        SceneManager.LoadScene("2");
+        SceneManager.LoadScene("mira1");
     }
     public void Cena2()
     {
-        SceneManager.LoadScene("3");
+        SceneManager.LoadScene("Dialogue 2");
     }
     public void Cena3()
     {
-        SceneManager.LoadScene("4");
-
-    }
-    public void Cena4()
-    {
-        SceneManager.LoadScene("5");
+        SceneManager.LoadScene("Dialogue 3");
 
     }
 }
