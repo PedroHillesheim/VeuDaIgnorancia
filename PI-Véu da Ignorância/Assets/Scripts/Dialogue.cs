@@ -1,11 +1,8 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
-<<<<<<< Updated upstream
-=======
 using Unity.VisualScripting;
 using System;
->>>>>>> Stashed changes
 
 public class Dialogue : MonoBehaviour
 {
@@ -13,18 +10,6 @@ public class Dialogue : MonoBehaviour
     public string[] frases;
     private int indice = 0;
     public GameObject painelDialogo;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-
-    void Start()
-    {
-        if (frases.Length > 0)
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     public AudioSource[] Fala;
     public AudioSource Ambient;
     public int CurrentAudio = 0;
@@ -37,13 +22,6 @@ public class Dialogue : MonoBehaviour
         }
 
         if (frases != null && frases.Length > 0)
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
         {
             textoDialogo.text = frases[0];
         }
@@ -65,18 +43,7 @@ public class Dialogue : MonoBehaviour
     {
         indice++;
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
         // Verifica se ainda há frases
->>>>>>> Stashed changes
-=======
-        // Verifica se ainda há frases
->>>>>>> Stashed changes
-=======
-        // Verifica se ainda há frases
->>>>>>> Stashed changes
         if (indice < frases.Length)
         {
             textoDialogo.text = frases[indice];
@@ -91,29 +58,9 @@ public class Dialogue : MonoBehaviour
         {
             // Fim do diálogo
             painelDialogo.SetActive(false);
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-
-
-         
-        }
-    }
-}
-=======
             Debug.Log("Fim do diálogo!");
         }
     }
-=======
-            Debug.Log("Fim do diálogo!");
-        }
-    }
->>>>>>> Stashed changes
-=======
-            Debug.Log("Fim do diálogo!");
-        }
-    }
->>>>>>> Stashed changes
 
     public void SomAtual()
     {
@@ -126,13 +73,3 @@ public class Dialogue : MonoBehaviour
         }
     }
 }
-
-
-
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
