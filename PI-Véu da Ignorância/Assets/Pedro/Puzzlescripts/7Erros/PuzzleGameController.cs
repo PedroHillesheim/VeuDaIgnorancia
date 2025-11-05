@@ -87,8 +87,6 @@ public class PuzzleGameController : MonoBehaviour
 
         botoesDesativados.Add(botaoClicado);
         coresOriginais.Add(botaoClicado.image.color);
-
-        botaoClicado.interactable = false;
         botaoClicado.image.color = new Color(0.85f, 0.85f, 0.85f);
 
         Transform imagemSobreposta = botaoClicado.transform.Find("ImagemSobreposta");
