@@ -337,7 +337,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Meu Deus\u2026 mas que m****?! \n"
+  m_text: "Algu\xE9m a\xED? \u2026 Isso n\xE3o \xE9 engra\xE7ado.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dea8e22e9af28e34ca7be0a19b7cf2a6, type: 2}
   m_sharedMaterial: {fileID: -5776383136956929862, guid: dea8e22e9af28e34ca7be0a19b7cf2a6, type: 2}
@@ -797,7 +797,6 @@ RectTransform:
   m_Children:
   - {fileID: 249724103}
   - {fileID: 575333671}
-  - {fileID: 1127390930}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1058,16 +1057,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127390929}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0061523435}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 787826416}
+  m_Father: {fileID: 1729079317}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -100, y: -116.8}
+  m_AnchoredPosition: {x: -101.475555, y: 50.590454}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1127390931
@@ -1553,6 +1552,7 @@ RectTransform:
   m_LocalScale: {x: 0.01984127, y: 0.01984127, z: 0.01984127}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1127390930}
   - {fileID: 320670495}
   - {fileID: 391904576}
   - {fileID: 1267288888}
@@ -1578,13 +1578,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogo
   textoDialogo: {fileID: 320670496}
   frases:
-  - "Meu Deus\u2026 mas que merd..?! "
-  - "N\xE3o\u2026 n\xE3o \xE9 gente\u2026 n\xE3o \xE9 poss\xEDvel"
-  - "A\u2026 a pele dela\u2026 os olhos\u2026"
-  - 'Preciso sair desse lugar... URGENTE '
+  - "Algu\xE9m a\xED? \u2026 Isso n\xE3o \xE9 engra\xE7ado.juro que vi algu\xE9m
+    atras de mim..."
+  - " A porta estava aberta h\xE1 pouco\u2026 Como ela trancou sozinha? Tem alguma
+    coisa errada com esse lugar."
+  - "rio\u2026 muito frio\u2026 parece que o ar t\xE1 me apertando."
   painelDialogo: {fileID: 1729079316}
-  voiceSource: {fileID: 0}
-  dublagens: []
+  voiceSource: {fileID: 279533727}
+  dublagens:
+  - {fileID: 8300000, guid: 3cfc4e7d9e436064caf4e0f0d4ea7fd0, type: 3}
+  - {fileID: 8300000, guid: 48b10d6e4f8886d45b3db59f67d2b56e, type: 3}
+  - {fileID: 8300000, guid: 87ada4966bc3d0845b955ac3034270ac, type: 3}
   ambientSource: {fileID: 0}
 --- !u!114 &1729079320
 MonoBehaviour:

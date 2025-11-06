@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 40a08de0fdcd39d4182c7774c971ba23
+guid: 8d98ce4de5b93f2439ef3cf32aded4da
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2053989363645956680
-    second: pixilart-sprite (1)_0
+      213: -1042038247396554037
+    second: lucas_0
   - first:
-      213: -996435834641883867
-    second: pixilart-sprite (1)_1
+      213: -1850363733428201762
+    second: lucas_1
   - first:
-      213: -1493032810441443054
-    second: pixilart-sprite (1)_2
+      213: -8476001918808431274
+    second: lucas_2
   - first:
-      213: 4089393204286459484
-    second: pixilart-sprite (1)_3
+      213: -8317159268839455448
+    second: lucas_3
   - first:
-      213: 2512838835981015971
-    second: pixilart-sprite (1)_4
+      213: 180261537161359813
+    second: lucas_4
   - first:
-      213: 1733115899004987713
-    second: pixilart-sprite (1)_5
+      213: -3701816734048366607
+    second: lucas_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,19 +112,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -141,7 +128,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pixilart-sprite (1)_0
+      name: lucas_0
       rect:
         serializedVersion: 2
         x: 26
@@ -149,21 +136,21 @@ TextureImporter:
         width: 34
         height: 56
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8bdb3776e83ce73e0800000000000000
-      internalID: -2053989363645956680
+      spriteID: bcace852cbfe981f0800000000000000
+      internalID: -1042038247396554037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_1
+      name: lucas_1
       rect:
         serializedVersion: 2
         x: 125
@@ -171,21 +158,21 @@ TextureImporter:
         width: 31
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52d53b243e2fb22f0800000000000000
-      internalID: -996435834641883867
+      spriteID: ed61fb3fcff2256e0800000000000000
+      internalID: -1850363733428201762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_2
+      name: lucas_2
       rect:
         serializedVersion: 2
         x: 225
@@ -193,21 +180,21 @@ TextureImporter:
         width: 34
         height: 58
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 21972afb19ea74be0800000000000000
-      internalID: -1493032810441443054
+      spriteID: 655e4e1a9213f5a80800000000000000
+      internalID: -8476001918808431274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_3
+      name: lucas_3
       rect:
         serializedVersion: 2
         x: 326
@@ -215,21 +202,21 @@ TextureImporter:
         width: 31
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c5e0468e37170c830800000000000000
-      internalID: 4089393204286459484
+      spriteID: 8250a7016b3839c80800000000000000
+      internalID: -8317159268839455448
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_4
+      name: lucas_4
       rect:
         serializedVersion: 2
         x: 423
@@ -237,37 +224,37 @@ TextureImporter:
         width: 34
         height: 58
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ab54749b956fd220800000000000000
-      internalID: 2512838835981015971
+      spriteID: 5c13b29b9ea608200800000000000000
+      internalID: 180261537161359813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixilart-sprite (1)_5
+      name: lucas_5
       rect:
         serializedVersion: 2
-        x: 522
+        x: 526
         y: 12
-        width: 35
+        width: 31
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 14926ca4ab34d0810800000000000000
-      internalID: 1733115899004987713
+      spriteID: 1ff437f1b4180acc0800000000000000
+      internalID: -3701816734048366607
       vertices: []
       indices: 
       edges: []
@@ -276,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 10184139f47bb684d8160fa6b71655e9
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -286,12 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pixilart-sprite (1)_0: -2053989363645956680
-      pixilart-sprite (1)_1: -996435834641883867
-      pixilart-sprite (1)_2: -1493032810441443054
-      pixilart-sprite (1)_3: 4089393204286459484
-      pixilart-sprite (1)_4: 2512838835981015971
-      pixilart-sprite (1)_5: 1733115899004987713
+      lucas_0: -1042038247396554037
+      lucas_1: -1850363733428201762
+      lucas_2: -8476001918808431274
+      lucas_3: -8317159268839455448
+      lucas_4: 180261537161359813
+      lucas_5: -3701816734048366607
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1745,19 +1745,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogo
   textoDialogo: {fileID: 320670496}
   frases:
-  - "Algu\xE9m a\xED? \u2026 Isso n\xE3o \xE9 engra\xE7ado. Juro que ouvi passos
-    atr\xE1s de mim\u2026"
-  - "A porta estava aberta h\xE1 pouco\u2026 Como ela trancou sozinha? Tem alguma
-    coisa errada com esse museu podre.  "
-  - "Frio\u2026 muito frio\u2026 parece que o ar t\xE1 me apertando."
+  - "Meu Deus\u2026 mas que m****?!"
+  - "A\u2026 a pele dela\u2026 os olhos\u2026Ela n\xE3o \xE9 uma pessoa, N\xC3O TEM
+    COMO!"
+  - Tenho que sair daqui AGORA!
   painelDialogo: {fileID: 1729079316}
   voiceSource: {fileID: 508650868}
   dublagens:
-  - {fileID: 8300000, guid: 3cfc4e7d9e436064caf4e0f0d4ea7fd0, type: 3}
-  - {fileID: 8300000, guid: 48b10d6e4f8886d45b3db59f67d2b56e, type: 3}
-  - {fileID: 8300000, guid: 87ada4966bc3d0845b955ac3034270ac, type: 3}
-  - {fileID: 8300000, guid: 661d954904aa43f41b8363ad251933b8, type: 3}
-  ambientSource: {fileID: 0}
+  - {fileID: 8300000, guid: a79c7deedca3a124bba30f381ce8cffd, type: 3}
+  - {fileID: 8300000, guid: 7745c48bb557ff14cbf28325fd9ce596, type: 3}
+  - {fileID: 8300000, guid: b2f20b956ceef7d498fd52add411d399, type: 3}
+  ambientSource: {fileID: 1867884393}
 --- !u!114 &1729079320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1824,7 +1822,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 786317d79c1d8f045ba8273062ef9902, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
