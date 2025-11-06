@@ -1745,15 +1745,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogo
   textoDialogo: {fileID: 320670496}
   frases:
-  - "Palavras presas? Que diabos ela t\xE1 falando\u2026?"
+  - "Algu\xE9m a\xED? \u2026 Isso n\xE3o \xE9 engra\xE7ado. Juro que ouvi passos
+    atr\xE1s de mim\u2026"
   - "Esse lugar parece\u2026 respirar."
   - "Ok\u2026 Lucas\u2026 voc\xEA s\xF3 precisa sair daqui. Nada de entrar em joguinhos
     de fantasma."
   - "Por que\u2026 tudo parece me ouvir?"
   - "(algo chama sua aten\xE7\xE3o mais que o normal entre os quadros velhos)"
   painelDialogo: {fileID: 1729079316}
-  Fala: {fileID: 508650868}
-  Ambient: {fileID: 0}
+  voiceSource: {fileID: 0}
+  dublagens: []
+  ambientSource: {fileID: 0}
 --- !u!114 &1729079320
 MonoBehaviour:
   m_ObjectHideFlags: 0
