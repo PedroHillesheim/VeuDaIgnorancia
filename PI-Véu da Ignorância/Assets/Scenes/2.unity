@@ -208,8 +208,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "As palavras est\xE3o presas, esperando serem completadas.\nUse as letras
-    certas para revelar o que foi esquecido.\n"
+  m_text: 'As palavras estao presas, esperando serem completadas.
+
+    Use as letras
+    certas para revelar o que foi esquecido.
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dea8e22e9af28e34ca7be0a19b7cf2a6, type: 2}
   m_sharedMaterial: {fileID: -5776383136956929862, guid: dea8e22e9af28e34ca7be0a19b7cf2a6, type: 2}
@@ -345,7 +349,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "(pausa conferindo o lugar)U\xE9\u2026 onde foi todo mundo? N\xE3o acredito\u2026
+  m_text: "(pausa conferindo o lugar) U\xE9\u2026 onde foi todo mundo? N\xE3o acredito\u2026
     s\xF3 eu consegui me perder neste fim de mundo. Ok, Lucas\u2026 respira\u2026
     \xE9 s\xF3 seguir o caminho de volta Por que parece que esse corredor n\xE3o
     tem fim?"

@@ -176,8 +176,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "S\xE9rio que trouxeram a gente pra esse lugar velho e mofado?(pausa conferindo
-    o lugar)U\xE9\u2026 onde foi todo mundo?"
+  m_text: "Serio que trouxeram a gente para esse lugar velho e mofado? \n(pausa conferindo
+    o lugar...) \nUe\u2026 onde foi todo mundo?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7cdc6b5010b1d724fb6688211bfd8dba, type: 2}
   m_sharedMaterial: {fileID: -3033086510672816437, guid: 7cdc6b5010b1d724fb6688211bfd8dba, type: 2}
