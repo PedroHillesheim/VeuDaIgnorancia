@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class PuzzlePiece : MonoBehaviour
 {
     public Vector3 correctPosition;
+    public Vector3 originPosition;
     public float snapDistance = 0.5f;
 
     public bool IsPlaced { get; private set; } = false;
@@ -68,5 +71,9 @@ public class PuzzlePiece : MonoBehaviour
         dragging = false;
         if (col2D != null) col2D.enabled = false;
         if (col3D != null) col3D.enabled = false;
+    }
+    public void ResetGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
