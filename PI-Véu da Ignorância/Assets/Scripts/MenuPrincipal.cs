@@ -34,4 +34,20 @@ public class MenuPrincipal : MonoBehaviour
         SceneManager.LoadScene("5");
 
     }
+    public void game1()
+    {
+        SceneManager.LoadScene("game 1");
+
+    }
+    public void game2()
+    {
+        SceneManager.LoadScene("game 2");
+
+    }
+
+    public void game3()
+    {
+        SceneManager.LoadScene("game 3");
+
+    }
 }
