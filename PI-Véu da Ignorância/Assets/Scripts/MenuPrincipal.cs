@@ -31,7 +31,13 @@ public class MenuPrincipal : MonoBehaviour
     }
     public void Cena4()
     {
-        SceneManager.LoadScene("5");
+        SceneManager.LoadScene(" Dialogue 5");
+
+    }
+
+    public void Cena5()
+    {
+        SceneManager.LoadScene("AndandoAForca");
 
     }
     public void game1()
