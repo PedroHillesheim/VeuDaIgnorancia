@@ -56,4 +56,10 @@ public class MenuPrincipal : MonoBehaviour
         SceneManager.LoadScene("game 3");
 
     }
+
+    public void finish()
+    {
+        SceneManager.LoadScene("Finish");
+
+    }
 }
