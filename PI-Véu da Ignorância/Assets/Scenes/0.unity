@@ -1611,6 +1611,7 @@ GameObject:
   - component: {fileID: 2089010279}
   - component: {fileID: 2089010281}
   - component: {fileID: 2089010280}
+  - component: {fileID: 2089010282}
   m_Layer: 5
   m_Name: Titulo
   m_TagString: Untagged
@@ -1634,8 +1635,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.49, y: 142}
-  m_SizeDelta: {x: 493.35, y: 80.27}
+  m_AnchoredPosition: {x: -2.49, y: 103.41}
+  m_SizeDelta: {x: 493.35, y: 157.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2089010280
 MonoBehaviour:
@@ -1736,6 +1737,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2089010278}
   m_CullTransparentMesh: 1
+--- !u!114 &2089010282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089010278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b227fc33918d93b42835c88a2a828eaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::way
+  axis: 0
+  maxAngle: 3
+  speed: 1
+  phaseOffset: 0
+  useUnscaledTime: 0
+  startPaused: 0
+  hoverScale: 0
+  scaleSpeed: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
