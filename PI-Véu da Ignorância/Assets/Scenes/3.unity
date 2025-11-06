@@ -344,7 +344,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Palavras presas? Que diabos ela t\xE1 falando\u2026?"
+  m_text: "Palavras presas? Que diabos ela ta falando\u2026?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dea8e22e9af28e34ca7be0a19b7cf2a6, type: 2}
   m_sharedMaterial: {fileID: -5776383136956929862, guid: dea8e22e9af28e34ca7be0a19b7cf2a6, type: 2}
@@ -1752,8 +1752,10 @@ MonoBehaviour:
   - "Por que\u2026 tudo parece me ouvir?"
   - "(algo chama sua aten\xE7\xE3o mais que o normal entre os quadros velhos)"
   painelDialogo: {fileID: 1729079316}
-  Fala: {fileID: 508650868}
+  Fala:
+  - {fileID: 0}
   Ambient: {fileID: 0}
+  CurrentAudio: 0
 --- !u!114 &1729079320
 MonoBehaviour:
   m_ObjectHideFlags: 0
