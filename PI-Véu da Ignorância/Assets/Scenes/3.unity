@@ -1891,6 +1891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogo
   textoDialogo: {fileID: 320670496}
   frases:
+  - AAAH!
   - "Meu Deus\u2026 mas que m****?!"
   - "A\u2026 a pele dela\u2026 os olhos\u2026Ela n\xE3o \xE9 uma pessoa, N\xC3O TEM
     COMO!"
@@ -1898,6 +1899,7 @@ MonoBehaviour:
   painelDialogo: {fileID: 1729079316}
   voiceSource: {fileID: 508650868}
   dublagens:
+  - {fileID: 8300000, guid: bb7e2ae9ac5bc7344b29b4b3c56d3c29, type: 3}
   - {fileID: 8300000, guid: a79c7deedca3a124bba30f381ce8cffd, type: 3}
   - {fileID: 8300000, guid: 7745c48bb557ff14cbf28325fd9ce596, type: 3}
   - {fileID: 8300000, guid: b2f20b956ceef7d498fd52add411d399, type: 3}
