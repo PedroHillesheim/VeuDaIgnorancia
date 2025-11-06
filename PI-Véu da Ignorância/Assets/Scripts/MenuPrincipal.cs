@@ -31,7 +31,7 @@ public class MenuPrincipal : MonoBehaviour
     }
     public void Cena4()
     {
-        SceneManager.LoadScene(" Dialogue 5");
+        SceneManager.LoadScene("Dialogue 5");
 
     }
 
