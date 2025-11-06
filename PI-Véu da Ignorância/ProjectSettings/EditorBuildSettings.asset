@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/game 2.unity
     guid: bf93a73ceeda805498917cadde98cf65
   - enabled: 1
+    path: Assets/Scenes/falamira.unity
+    guid: 6188567912f70a54fa70f5a5e64de6fd
+  - enabled: 1
     path: Assets/Scenes/game 1.unity
     guid: 3dedb4f3dc4009f4ea7b7c7e54f4cf53
   - enabled: 1

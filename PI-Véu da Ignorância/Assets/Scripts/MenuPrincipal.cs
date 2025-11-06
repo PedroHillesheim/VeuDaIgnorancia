@@ -22,20 +22,25 @@ public class MenuPrincipal : MonoBehaviour
     }
     public void Cena3()
     {
-        SceneManager.LoadScene("3");
+        SceneManager.LoadScene("falamira");
     }
     public void Cena4()
     {
-        SceneManager.LoadScene("4");
+        SceneManager.LoadScene("3");
 
     }
     public void Cena5()
     {
-        SceneManager.LoadScene("Dialogue 5");
+        SceneManager.LoadScene("4");
 
     }
 
-    public void Cena6()
+    public void cena6()
+    {
+        SceneManager.LoadScene("Dialogue 5");
+
+    }
+    public void Cena7()
     {
         SceneManager.LoadScene("AndandoAForca");
 
