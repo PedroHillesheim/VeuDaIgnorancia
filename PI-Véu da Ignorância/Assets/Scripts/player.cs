@@ -75,7 +75,39 @@ public class Player : MonoBehaviour
     void Update()
 
     {
+        {
+            horizontal = Input.GetAxis("Horizontal");
 
+            // Controla a velocidade atual (andar, correr, agachar)
+            if (Input.GetKey(KeyCode.Space))
+            {
+                speed = crouchSpeed;
+                transform.localScale = new Vector3(originalScale.x, originalScale.y * crouchHeightMultiplier, originalScale.z);
+            }
+            else
+            {
+                speed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
+                transform.localScale = originalScale;
+            }
+
+            // Movimento físico
+            body.linearVelocity = new Vector2(horizontal * speed, body.linearVelocity.y);
+
+            // 👉 Atualiza o parâmetro da animação
+            animator.SetFloat("Speed", Mathf.Abs(horizontal));
+
+            // Direciona o personagem
+            if (horizontal > 0)
+                transform.localScale = new Vector3(Mathf.Abs(originalScale.x), transform.localScale.y, transform.localScale.z);
+            else if (horizontal < 0)
+                transform.localScale = new Vector3(-Mathf.Abs(originalScale.x), transform.localScale.y, transform.localScale.z);
+
+            // Interação com clique
+            if (Input.GetMouseButtonDown(0))
+            {
+                RaycastForInteraction();
+            }
+        }
         horizontal = Input.GetAxis("Horizontal");
 
         speed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
