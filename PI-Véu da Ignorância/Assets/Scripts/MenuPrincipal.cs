@@ -16,26 +16,26 @@ public class MenuPrincipal : MonoBehaviour
         SceneManager.LoadScene("0");
 
     }
-    public void Cena1()
+    public void cena2()
     {
         SceneManager.LoadScene("2");
     }
-    public void Cena2()
+    public void Cena3()
     {
         SceneManager.LoadScene("3");
     }
-    public void Cena3()
+    public void Cena4()
     {
         SceneManager.LoadScene("4");
 
     }
-    public void Cena4()
+    public void Cena5()
     {
         SceneManager.LoadScene("Dialogue 5");
 
     }
 
-    public void Cena5()
+    public void Cena6()
     {
         SceneManager.LoadScene("AndandoAForca");
 
@@ -54,6 +54,12 @@ public class MenuPrincipal : MonoBehaviour
     public void game3()
     {
         SceneManager.LoadScene("game 3");
+
+    }
+
+    public void finish()
+    {
+        SceneManager.LoadScene("Finish");
 
     }
 }
