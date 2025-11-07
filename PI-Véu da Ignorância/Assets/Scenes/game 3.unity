@@ -474,6 +474,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1314d4380c9ef4e931bc51d8b79bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuPrincipal
+  clickButton: {fileID: 0}
+  cenaDestino: 1
 --- !u!114 &191109438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -889,7 +891,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &447662510
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1033,7 +1035,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 488305673}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1845662290}
+        m_TargetAssemblyTypeName: TrocadeTela, Assembly-CSharp
+        m_MethodName: OutraScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Finish
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &488305673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1179,7 +1193,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1338593369
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1412,8 +1426,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'You Win '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 498a12670f6744840ad86fb8978dab71, type: 2}
-  m_sharedMaterial: {fileID: 8700578986688851816, guid: 498a12670f6744840ad86fb8978dab71, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1638,6 +1652,7 @@ GameObject:
   - component: {fileID: 1845662288}
   - component: {fileID: 1845662287}
   - component: {fileID: 1845662286}
+  - component: {fileID: 1845662290}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1728,6 +1743,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1845662290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845662285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d42aa3933d5945e4aa9b486a3924ed6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TrocadeTela
 --- !u!1 &1953747623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1787,8 +1814,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 3 / 3
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 498a12670f6744840ad86fb8978dab71, type: 2}
-  m_sharedMaterial: {fileID: 8700578986688851816, guid: 498a12670f6744840ad86fb8978dab71, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
