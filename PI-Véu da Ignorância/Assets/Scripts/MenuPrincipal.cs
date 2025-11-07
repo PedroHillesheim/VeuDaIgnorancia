@@ -70,12 +70,12 @@ public void Creditos()
     }
     public void game1()
     {
-        SceneManager.LoadScene("game 1");
+        SceneManager.LoadScene("game 2");
 
     }
     public void game2()
     {
-        SceneManager.LoadScene("game 2");
+        SceneManager.LoadScene("game");
 
     }
 
