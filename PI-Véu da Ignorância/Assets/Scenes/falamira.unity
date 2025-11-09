@@ -1554,14 +1554,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogo
   textoDialogo: {fileID: 320670496}
   frases:
-  - "As palavras est\xE3o presas, esperando serem completadas. Use as letras certas
-    para revelar o que foi esquecido."
+  - "As palavras est\xE3o presas, esperando serem completadas."
+  - Use as letras certas para revelar o que foi esquecido
   - "Mas cuidado: cada erro deixa o museu... diferente. Como se ele sentisse quando
     voc\xEA falha"
   - "N\xE3o \xE9 s\xF3 um enigma... \xE9 uma lembran\xE7a tentando se recompor."
   painelDialogo: {fileID: 1729079316}
-  voiceSource: {fileID: 0}
-  dublagens: []
+  voiceSource: {fileID: 707950204}
+  dublagens:
+  - {fileID: 8300000, guid: 24064402a14df4b429a956dec084e129, type: 3}
+  - {fileID: 8300000, guid: 8dd9c766c5bb7d7419994fe0a1256d83, type: 3}
+  - {fileID: 8300000, guid: a9929391bdc66c14eae766cf7990e44d, type: 3}
+  - {fileID: 8300000, guid: 512573d60be72494583e9784faca681c, type: 3}
   ambientSource: {fileID: 0}
 --- !u!114 &1729079320
 MonoBehaviour:
@@ -1746,6 +1750,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1314d4380c9ef4e931bc51d8b79bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuPrincipal
+  clickButton: {fileID: 0}
+  cenaDestino: 1
 --- !u!1 &2094227606
 GameObject:
   m_ObjectHideFlags: 0
