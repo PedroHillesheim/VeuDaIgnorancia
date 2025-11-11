@@ -1,70 +1,84 @@
 using UnityEngine;
 using TMPro;
-using UnityEngine.SceneManagement;
-using Unity.VisualScripting;
-using static UnityEditor.ShaderData;
-using System;
 
-public class Dialogue: MonoBehaviour
+public class Dialogue : MonoBehaviour
 {
     public TMP_Text textoDialogo;
     public string[] frases;
     private int indice = 0;
     public GameObject painelDialogo;
-    public AudioSource [] Fala;
-    public AudioSource Ambient;
-    public int CurrentAudio = 0;
+
+    [Header("Áudio")]
+    public AudioSource voiceSource;      // Um único AudioSource que vai tocar as vozes
+    public AudioClip[] dublagens;        // Clips correspondentes às frases (mesma ordem)
+    public AudioSource ambientSource;    // opcional
 
     void Start()
     {
-        Ambient.Play();
-        
-        if (frases.Length > 0)
+        if (ambientSource != null)
+            ambientSource.Play();
+
+        if (frases != null && frases.Length > 0)
         {
+            indice = 0;
             textoDialogo.text = frases[0];
+            TocarDublagem(indice);
+        }
+        else
+        {
+            Debug.LogWarning("Nenhuma frase foi atribuída ao diálogo!");
         }
     }
 
     void Update()
     {
-        SomAtual();
         if (Input.GetKeyDown(KeyCode.E))
         {
+            // se quiser esperar o áudio terminar antes de avançar:
+            // if (voiceSource != null && voiceSource.isPlaying) return;
+
             ProximaFrase();
         }
     }
 
     void ProximaFrase()
     {
-        
         indice++;
-        
+
         if (indice < frases.Length)
         {
             textoDialogo.text = frases[indice];
+            TocarDublagem(indice);
         }
         else
         {
-
             painelDialogo.SetActive(false);
-            
-            
+            Debug.Log("Fim do diálogo!");
+        }
+    }
 
-         
+    void TocarDublagem(int index)
+    {
+        if (voiceSource == null)
+        {
+            Debug.LogWarning("voiceSource não atribuído no Inspector!");
+            return;
         }
 
-    }
-    public void SomAtual()
-    {
+        // Para o áudio atual (caso esteja tocando)
+        if (voiceSource.isPlaying)
+            voiceSource.Stop();
 
-        if (CurrentAudio < Fala.Length)
+        // Toca clip correspondente se existir
+        if (index < dublagens.Length && dublagens[index] != null)
         {
-            Fala[CurrentAudio].Play(); // Toca o �udio atual
-            Invoke(nameof(SomAtual), Fala[CurrentAudio].clip.length); // Chama o pr�ximo ap�s o t�rmino
-            CurrentAudio++; // Avan�a para o pr�ximo �udio
+            voiceSource.clip = dublagens[index];
+            voiceSource.Play();
+            Debug.Log($"Tocando dublagem {index}: {dublagens[index].name}");
+        }
+        else
+        {
+            Debug.LogWarning($"Não há dublagem para índice {index}");
         }
     }
 }
-
-
-   
