@@ -297,7 +297,7 @@ GameObject:
   - component: {fileID: 337111145}
   - component: {fileID: 337111144}
   m_Layer: 5
-  m_Name: PalavraSecreta (1)
+  m_Name: Dica
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
