@@ -272,8 +272,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1314d4380c9ef4e931bc51d8b79bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuPrincipal
-  clickButton: {fileID: 0}
-  cenaDestino: 1
 --- !u!114 &198574591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -603,8 +601,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1314d4380c9ef4e931bc51d8b79bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuPrincipal
-  clickButton: {fileID: 0}
-  cenaDestino: 1
 --- !u!1 &255576089
 GameObject:
   m_ObjectHideFlags: 0
@@ -3000,7 +2996,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1111497971
 MonoBehaviour:
   m_ObjectHideFlags: 0
