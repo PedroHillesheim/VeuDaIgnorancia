@@ -992,8 +992,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1314d4380c9ef4e931bc51d8b79bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuPrincipal
-  clickButton: {fileID: 0}
-  cenaDestino: 1
 --- !u!1 &1249641192
 GameObject:
   m_ObjectHideFlags: 0
@@ -1670,11 +1668,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   textoDialogo: {fileID: 320670496}
   frases:
-  - "S\xE9rio que trouxeram a gente pra esse lugar velho e mofado?(pausa conferindo
-    o lugar)U\xE9\u2026 onde foi todo mundo?"
-  - " N\xE3o acredito\u2026 s\xF3 eu consegui me perder neste fim de mundo. "
-  - "Ok, Lucas\u2026 respira\u2026 \xE9 s\xF3 seguir o caminho de volta "
-  - "Por que parece que esse corredor n\xE3o tem fim?"
+  - "Serio que trouxeram a gente pra esse lugar velho e mofado?(pausa conferindo
+    o lugar)Ue\u2026 onde foi todo mundo?"
+  - " Nao acredito\u2026 so eu consegui me perder neste fim de mundo. "
+  - "Ok, Lucas\u2026 respira\u2026 e so seguir o caminho de volta "
+  - Por que parece que esse corredor nao tem fim?
   painelDialogo: {fileID: 1729079316}
   voiceSource: {fileID: 1633170270}
   dublagens:
