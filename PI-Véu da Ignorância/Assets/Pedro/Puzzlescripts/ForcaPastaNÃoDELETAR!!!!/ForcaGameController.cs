@@ -21,6 +21,9 @@ public class ForcaGameController : MonoBehaviour
     }
     void Update()
     {
+        if (loser.activeSelf)
+            return;
+
         for (char c = 'A'; c <= 'Z'; c++)
         {
             if (pareDeAVerificacao == true)
