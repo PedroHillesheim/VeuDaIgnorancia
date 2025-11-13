@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 158097754}
   - component: {fileID: 158097753}
   m_Layer: 0
-  m_Name: Square (1)
+  m_Name: Quadro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e726c7fa15724f741a0ad3bbdcd4a49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneChangeForDistance
-  sceneName: NomeDaNovaCena
+  sceneName: ForcaJogo
   triggerDistance: 3
   player: {fileID: 1367695230}
 --- !u!212 &158097754
@@ -1136,8 +1136,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1314d4380c9ef4e931bc51d8b79bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuPrincipal
-  clickButton: {fileID: 0}
-  cenaDestino: 1
 --- !u!114 &1958559854
 MonoBehaviour:
   m_ObjectHideFlags: 0
