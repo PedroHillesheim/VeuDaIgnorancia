@@ -8,6 +8,7 @@ public class ForcaGameController : MonoBehaviour
     [SerializeField] string palavraSecreta;
     [SerializeField] UnityEvent winScreen;
     [SerializeField] UnityEvent loseScreen;
+    public GameObject loser;
     char[] palavraEscondida;
     string letrasErradas = "";
     int tentativasRestantes = 6;
