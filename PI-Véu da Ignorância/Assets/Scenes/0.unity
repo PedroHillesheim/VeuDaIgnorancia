@@ -482,7 +482,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 460416448}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: Jogar
+        m_MethodName: tutorial
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -542,7 +542,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1314d4380c9ef4e931bc51d8b79bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickButton: {fileID: 1315982914}
 --- !u!114 &460416449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1079,7 +1078,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1314d4380c9ef4e931bc51d8b79bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickButton: {fileID: 0}
 --- !u!114 &1103756577
 MonoBehaviour:
   m_ObjectHideFlags: 0
