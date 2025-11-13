@@ -215,8 +215,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dea8e22e9af28e34ca7be0a19b7cf2a6, type: 2}
-  m_sharedMaterial: {fileID: -5776383136956929862, guid: dea8e22e9af28e34ca7be0a19b7cf2a6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 693fa6e5e19a92747888f11d6c1ebd96, type: 2}
+  m_sharedMaterial: {fileID: -4017797250814641293, guid: 693fa6e5e19a92747888f11d6c1ebd96, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1554,6 +1554,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogo
   textoDialogo: {fileID: 320670496}
   frases:
+  - Me chamo mira...Mira schendel..Habito nesse museu ha alguns anos.. vi que estava
+    perdido. Eu posso te ajudar a sair.
   - "As palavras est\xE3o presas, esperando serem completadas."
   - Use as letras certas para revelar o que foi esquecido
   - "Mas cuidado: cada erro deixa o museu... diferente. Como se ele sentisse quando
