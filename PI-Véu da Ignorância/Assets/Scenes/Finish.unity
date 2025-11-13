@@ -379,7 +379,8 @@ MonoBehaviour:
   m_text: "Voce escapou do museu, e libertou a alma de mira... Com medo correu para
     uma delegacia proxima de voce e relatou ter se perdido do seu grupo de turismo..
     Os policias te ajudaram. E voce esta em seguranca em casa.. mas voc\xEA n\xE3o
-    esquece o que aconteceu.\nLogo voce ve um vulto e sussuros.."
+    esquece o que aconteceu.\nLogo apos de isso tudo acontecer, voce ve vultos e
+    sussurros..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 637b62fae11c9534d847d7680ca089b7, type: 2}
   m_sharedMaterial: {fileID: 8700578986688851816, guid: 637b62fae11c9534d847d7680ca089b7, type: 2}
