@@ -72,4 +72,9 @@ public class MenuPrincipal : MonoBehaviour
         SceneManager.LoadScene("Finish");
 
     }
+
+    public void Mira()
+    {
+        SceneManager.LoadScene("SobreMira");
+    }
 }
