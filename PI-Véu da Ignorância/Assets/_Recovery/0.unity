@@ -955,7 +955,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 1520556042553756310, guid: c36955876a417ba49bc1b0d71e81e2b4, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.6666667}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6666667}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2118,8 +2118,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   textoDialogo: {fileID: 320670496}
   frases:
-  - "Serio que trouxeram a gente pra esse lugar velho e mofado? (pausa conferindo
-    o lugar) Hmph, ue\u2026 onde foi todo mundo?"
+  - "Serio que trouxeram a gente pra esse lugar velho e mofado?(pausa conferindo
+    o lugar)Ue\u2026 onde foi todo mundo?"
   - " Nao acredito\u2026 so eu consegui me perder neste fim de mundo. "
   - "Ok, Lucas\u2026 respira\u2026 e so seguir o caminho de volta "
   - Por que parece que esse corredor nao tem fim?
