@@ -1311,7 +1311,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1958559853}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: game2
+        m_MethodName: game1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

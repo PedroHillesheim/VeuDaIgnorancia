@@ -52,12 +52,12 @@ public class MenuPrincipal : MonoBehaviour
     }
     public void game1()
     {
-        SceneManager.LoadScene("game 2");
+        SceneManager.LoadScene("game 1");
 
     }
     public void game2()
     {
-        SceneManager.LoadScene("game");
+        SceneManager.LoadScene("game 2");
 
     }
 
