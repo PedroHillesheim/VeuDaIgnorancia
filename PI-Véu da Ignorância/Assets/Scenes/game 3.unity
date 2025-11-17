@@ -785,7 +785,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -226
   m_Sprite: {fileID: 7285104100621103090, guid: 2e43beb847b88f34a888e1b63361459b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.56203073, g: 0.5566807, b: 0.5566807, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1054,6 +1054,7 @@ GameObject:
   - component: {fileID: 488305674}
   - component: {fileID: 488305673}
   - component: {fileID: 488305672}
+  - component: {fileID: 488305675}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -1123,7 +1124,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 488305673}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 488305675}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: finish
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &488305673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1162,6 +1175,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 488305670}
   m_CullTransparentMesh: 1
+--- !u!114 &488305675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488305670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1314d4380c9ef4e931bc51d8b79bfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuPrincipal
 --- !u!1 &622972961
 GameObject:
   m_ObjectHideFlags: 0
