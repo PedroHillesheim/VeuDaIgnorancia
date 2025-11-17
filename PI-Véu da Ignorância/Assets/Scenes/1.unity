@@ -779,12 +779,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 733492150}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.29, y: -2.09, z: 0}
-  m_LocalScale: {x: 0.71067, y: 0.71067, z: 0.71067}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -141.35759, y: -58.251587, z: -2916.0002}
+  m_LocalScale: {x: 18.990274, y: 19.80706, z: 23.02571}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1729079317}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &787826412
 GameObject:
@@ -973,12 +973,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029023340}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0039, y: -3.2763, z: 0}
-  m_LocalScale: {x: 2.4217117, y: 0.7243632, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.10426477, y: -91.31492, z: -2916.0002}
+  m_LocalScale: {x: 64.71213, y: 20.188704, z: 32.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1729079317}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1043806469
 GameObject:
@@ -1711,6 +1711,7 @@ GameObject:
   - component: {fileID: 1633170270}
   - component: {fileID: 1633170273}
   - component: {fileID: 1633170272}
+  - component: {fileID: 1633170274}
   m_Layer: 0
   m_Name: AudioSorceGlobal
   m_TagString: Untagged
@@ -2024,6 +2025,103 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!82 &1633170274
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633170267}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1729079316
 GameObject:
   m_ObjectHideFlags: 0
@@ -2059,6 +2157,8 @@ RectTransform:
   - {fileID: 391904576}
   - {fileID: 1267288888}
   - {fileID: 565356038}
+  - {fileID: 733492153}
+  - {fileID: 1029023342}
   m_Father: {fileID: 787826416}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2118,12 +2218,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   textoDialogo: {fileID: 320670496}
   frases:
-  - "Serio que trouxeram a gente pra esse lugar velho e mofado? (pausa conferindo
+  - "Hmph, e serio que trouxeram a gente pra esse lugar velho e mofado? (pausa conferindo
     o lugar) Hmph, ue\u2026 onde foi todo mundo?"
-  - " Nao acredito\u2026 so eu consegui me perder neste fim de mundo. "
+  - ' Aaai... Nao acredito! So eu para me perder neste fim de mundo mesmo. '
   - "Ok, Lucas\u2026 respira\u2026 e so seguir o caminho de volta "
-  - Por que parece que esse corredor nao tem fim?
-  painelDialogo: {fileID: 1029023340}
+  - Ahh, por que parece que esse corredor nao acaba? Parece que to andando em circulos!
+  painelDialogo: {fileID: 1729079316}
   voiceSource: {fileID: 1633170270}
   dublagens:
   - {fileID: 8300000, guid: c4af0fa8746f36249a955c80e4fe6b8e, type: 3}
@@ -2325,5 +2425,3 @@ SceneRoots:
   - {fileID: 1305956203}
   - {fileID: 1815588259}
   - {fileID: 1214636011}
-  - {fileID: 1029023342}
-  - {fileID: 733492153}
