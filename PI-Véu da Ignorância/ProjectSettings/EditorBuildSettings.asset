@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/game 3.unity
     guid: 67dc4185cae159f4f8d7c5522cb9a73f
   - enabled: 1
+    path: Assets/Scenes/SobreMira.unity
+    guid: 3a6417fa5ad90094cb3e8a57c25cb4f7
+  - enabled: 1
     path: Assets/Scenes/game 2.unity
     guid: bf93a73ceeda805498917cadde98cf65
   - enabled: 1
