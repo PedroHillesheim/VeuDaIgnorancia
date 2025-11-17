@@ -1987,8 +1987,8 @@ MonoBehaviour:
   - ' Aaai... Nao acredito! So eu para me perder neste fim de mundo mesmo. '
   - "Ok, Lucas\u2026 respira\u2026 e so seguir o caminho de volta "
   - Ahh, por que parece que esse corredor nao acaba? Parece que to andando em circulos!
-  - 'Mas, antes de voltar pelo caminho... Vou ler este quadro: "Mira", estranho...
-    Mas, me chamou a atencao.'
+  - 'Mas, antes de voltar pelo caminho... Acho que vou ler a este quadro: "Mira",
+    estranho... Mas, me chamou a atencao.'
   painelDialogo: {fileID: 1729079316}
   voiceSource: {fileID: 1633170270}
   dublagens:
