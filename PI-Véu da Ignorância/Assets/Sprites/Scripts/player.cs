@@ -35,8 +35,8 @@ public class Player : MonoBehaviour
         // Define velocidade e altura conforme o estado
         if (Input.GetKey(KeyCode.Space))
         {
-            speed = crouchSpeed;
-            transform.localScale = new Vector3(originalScale.x, originalScale.y * crouchHeightMultiplier, originalScale.z);
+            //speed = crouchSpeed;
+            //transform.localScale = new Vector3(originalScale.x, originalScale.y * crouchHeightMultiplier, originalScale.z);
         }
         else
         {
