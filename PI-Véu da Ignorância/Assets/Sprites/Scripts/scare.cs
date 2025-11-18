@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ScareSceneLoaderJunior : MonoBehaviour
+public class scare : MonoBehaviour
 {
     
     public string nextSceneName = "6";
