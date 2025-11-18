@@ -1161,15 +1161,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 966806522}
-        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: game2
-        m_Mode: 1
+        m_TargetAssemblyTypeName: TrocadeTela, Assembly-CSharp
+        m_MethodName: OutraScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: flashBack1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &966806520
@@ -1219,9 +1219,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 966806517}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a1314d4380c9ef4e931bc51d8b79bfb, type: 3}
+  m_Script: {fileID: 11500000, guid: d42aa3933d5945e4aa9b486a3924ed6c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MenuPrincipal
+  m_EditorClassIdentifier: Assembly-CSharp::TrocadeTela
 --- !u!1 &1008308532
 GameObject:
   m_ObjectHideFlags: 0
