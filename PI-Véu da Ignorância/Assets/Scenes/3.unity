@@ -1596,7 +1596,8 @@ MonoBehaviour:
   frases:
   - AAAH!
   - "Meu Deus\u2026 mas que m****?!"
-  - "A\u2026 a pele dela\u2026 os olhos\u2026Ela nao e uma pessoa, NAO TEM COMO!"
+  - "A\u2026 Aquela pele\u2026 Aqueles olhos\u2026 Ela nao e uma pessoa, NAO TEM
+    COMO!"
   - Tenho que sair daqui AGORA!
   painelDialogo: {fileID: 1729079316}
   voiceSource: {fileID: 508650868}

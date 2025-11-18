@@ -652,7 +652,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 575333672}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: cena2
+        m_MethodName: cena6
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
