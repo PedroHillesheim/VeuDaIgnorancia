@@ -351,9 +351,9 @@ MonoBehaviour:
   textoDialogo: {fileID: 1533317236}
   textoNome: {fileID: 973954648}
   frases:
-  - "Atualmente t\xE1 muito dif\xEDcil continuar aqui"
-  - Fui expulsa da escola por conta da segunda guerra mundial
-  - "Vou ter que fugir para outro pa\xEDs, para poder sobreviver"
+  - "Atualmente t\xE1 perigoso demais para alguem como eu"
+  - Vou ter que abandonar meus estudos por conta da segunda guerra mundial
+  - "Ent\xE3o n\xE3o posso mais perder tempo"
   nomes:
   - Mira Schendel
   - Mira Schendel
