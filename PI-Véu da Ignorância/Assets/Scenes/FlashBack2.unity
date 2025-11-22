@@ -241,7 +241,7 @@ MonoBehaviour:
   - Mira Schendel
   - "M\xE1rio Schenberg"
   - Mira Schendel
-  cena: game 3
+  cena: QuebraCabecaTutorial
   voiceSource: {fileID: 0}
   dublagens: []
   ambientSource: {fileID: 0}
