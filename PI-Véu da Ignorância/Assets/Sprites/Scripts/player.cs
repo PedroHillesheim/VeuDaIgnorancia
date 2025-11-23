@@ -2,21 +2,19 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [Header("Configurações de Movimento")]
+    public float jumpForce = 7f;
     public float walkSpeed = 5f;
     public float runSpeed = 9f;
-    public float crouchSpeed = 2f;
-    public float crouchHeightMultiplier = 0.5f;
-
     private float horizontal;
     private float speed;
-
+    private Rigidbody2D rb;
     private Rigidbody2D body;
     private Animator animator;
     private Vector3 originalScale;
 
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         body = GetComponent<Rigidbody2D>();
         if (body == null)
             Debug.LogError("Rigidbody2D não encontrado!");
@@ -35,8 +33,7 @@ public class Player : MonoBehaviour
         // Define velocidade e altura conforme o estado
         if (Input.GetKey(KeyCode.Space))
         {
-            //speed = crouchSpeed;
-            //transform.localScale = new Vector3(originalScale.x, originalScale.y * crouchHeightMultiplier, originalScale.z);
+            //Só existe para não quebrar o codigo
         }
         else
         {
@@ -51,18 +48,25 @@ public class Player : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(horizontal));
 
         // Direção do personagem
-        if (horizontal > 0)
+        if (horizontal > 0) 
+        { 
             transform.localScale = new Vector3(Mathf.Abs(originalScale.x), transform.localScale.y, transform.localScale.z);
-        else if (horizontal < 0)
+        }
+        else if (horizontal < 0) 
+        { 
             transform.localScale = new Vector3(-Mathf.Abs(originalScale.x), transform.localScale.y, transform.localScale.z);
-
-        // Interação
+        }
         if (Input.GetMouseButtonDown(0))
         {
             RaycastForInteraction();
         }
-    }
+        bool isGrounded = Mathf.Abs(rb.linearVelocity.y) < 0.01f;
 
+        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        }
+    }
     void RaycastForInteraction()
     {
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
