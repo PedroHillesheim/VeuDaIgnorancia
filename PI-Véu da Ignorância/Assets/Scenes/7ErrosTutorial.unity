@@ -548,8 +548,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -243, y: 166}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -0.00000095367, y: 14.21}
+  m_SizeDelta: {x: 677.29, y: 320.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1800449548
 MonoBehaviour:
@@ -571,10 +571,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Este jogo se chama 7 erros, na qual caso encontrar um erro, ter\xE1 que
-    clicar nele caso for um erro de fato o numero de erros achados aumenta caso clicar
-    em algo que tava certo vai perder tentativas. Podera ver a arte original clicando
-    no bot\xE3o arte original."
+  m_text: 'Jogo: 7 erros.
+
+
+    Para jogar, voce deve identificar e clicar em cada
+    erro. Se a imagem clicada for um erro, voce perdera tentativas, voce pode consultar
+    a arte de referencia clicando no botao ''''Arte Original''''.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 637b62fae11c9534d847d7680ca089b7, type: 2}
   m_sharedMaterial: {fileID: 8700578986688851816, guid: 637b62fae11c9534d847d7680ca089b7, type: 2}
@@ -583,8 +585,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294947584
-  m_fontColor: {r: 0, g: 0.70002985, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -639,7 +641,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -445.3347, w: 0}
+  m_margin: {x: -1.3170093, y: 0, z: -4.4754333, w: -5.774826}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -689,8 +691,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 312, y: -179.42}
-  m_SizeDelta: {x: 160, y: 65.16}
+  m_AnchoredPosition: {x: -144, y: -161}
+  m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2020560013
 MonoBehaviour:
