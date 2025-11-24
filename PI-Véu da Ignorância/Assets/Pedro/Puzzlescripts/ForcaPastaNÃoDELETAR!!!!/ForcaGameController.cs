@@ -8,7 +8,6 @@ public class ForcaGameController : MonoBehaviour
     [SerializeField] string palavraSecreta;
     [SerializeField] UnityEvent winScreen;
     [SerializeField] UnityEvent loseScreen;
-    public GameObject loser;
     char[] palavraEscondida;
     string letrasErradas = "";
     int tentativasRestantes = 6;
@@ -21,9 +20,6 @@ public class ForcaGameController : MonoBehaviour
     }
     void Update()
     {
-        if (loser.activeSelf)
-            return;
-
         for (char c = 'A'; c <= 'Z'; c++)
         {
             if (pareDeAVerificacao == true)
