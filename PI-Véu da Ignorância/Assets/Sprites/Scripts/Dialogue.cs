@@ -7,17 +7,16 @@ public class Dialogue : MonoBehaviour
     public string[] frases;
     private int indice = 0;
     public GameObject painelDialogo;
-
-    [Header("Áudio")]
-    public AudioSource voiceSource;      // Um único AudioSource que vai tocar as vozes
-    public AudioClip[] dublagens;        // Clips correspondentes às frases (mesma ordem)
-    public AudioSource ambientSource;    // opcional
+    public AudioSource voiceSource;      
+    public AudioClip[] dublagens;        
+    public AudioSource ambientSource;    
 
     void Start()
     {
-        if (ambientSource != null)
+        if (ambientSource != null) 
+        {
             ambientSource.Play();
-
+        }
         if (frases != null && frases.Length > 0)
         {
             indice = 0;
@@ -34,9 +33,6 @@ public class Dialogue : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            // se quiser esperar o áudio terminar antes de avançar:
-            // if (voiceSource != null && voiceSource.isPlaying) return;
-
             ProximaFrase();
         }
     }
@@ -64,12 +60,10 @@ public class Dialogue : MonoBehaviour
             Debug.LogWarning("voiceSource não atribuído no Inspector!");
             return;
         }
-
-        // Para o áudio atual (caso esteja tocando)
-        if (voiceSource.isPlaying)
+        if (voiceSource.isPlaying) 
+        { 
             voiceSource.Stop();
-
-        // Toca clip correspondente se existir
+        }
         if (index < dublagens.Length && dublagens[index] != null)
         {
             voiceSource.clip = dublagens[index];

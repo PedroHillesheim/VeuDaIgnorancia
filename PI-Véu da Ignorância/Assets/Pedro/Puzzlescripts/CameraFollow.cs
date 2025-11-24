@@ -10,7 +10,6 @@ public class CameraFollow : MonoBehaviour
     {
         if (target == null)
         {
-            // Tenta achar o jogador automaticamente
             GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
             if (playerObj != null)
                 target = playerObj.transform;

@@ -3,7 +3,7 @@ using UnityEngine;
 public class Original : MonoBehaviour
 {
     public GameObject arteOriginal;
-    void Awakw()
+    void Start()
     {
         arteOriginal.SetActive(false);
     }
