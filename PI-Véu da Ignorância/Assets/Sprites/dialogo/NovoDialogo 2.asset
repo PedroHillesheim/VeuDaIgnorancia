@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee8341ab5fe569f4898189c5d8653675, type: 3}
   m_Name: NovoDialogo 2
   m_EditorClassIdentifier: Assembly-CSharp::DialogoData
-  falas: []
+  falas:
+  - nomePersonagem: 'Jogo: Quebra cabeca '
+    texto: Voce tera que colocar as pecas em seus devidos lugares para conclusao
+      do objetivo e formar uma imagem.

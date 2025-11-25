@@ -140,8 +140,8 @@ public class DialogoSistema : MonoBehaviour
         if (mudaCenaAoTerminar)
         {
             aguardandoTrocaCena = true;
-            dialogueText.text = "<i>Pressione F para continuar...</i>";
-            nomeText.text = "";
+        
+           
         }
         else
         {

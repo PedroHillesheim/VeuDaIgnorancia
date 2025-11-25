@@ -525,7 +525,7 @@ MonoBehaviour:
   dialogueText: {fileID: 1849693546}
   nomeText: {fileID: 1490036836}
   typingSpeed: 0.03
-  mudaCenaAoTerminar: 1
+  mudaCenaAoTerminar: 0
   nextSceneName: 
 --- !u!1 &1088283066
 GameObject:
@@ -1005,7 +1005,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Na qual tera que adivinhar a palavra, usando seu conhecimento adquirido
     e escrevendo cada letra, cada erro sera  mostrado no canto inferior esquerdo.
-    Aperte F para come\xE7ar."
+    Aperte enter para come\xE7ar."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 637b62fae11c9534d847d7680ca089b7, type: 2}
   m_sharedMaterial: {fileID: 8700578986688851816, guid: 637b62fae11c9534d847d7680ca089b7, type: 2}
