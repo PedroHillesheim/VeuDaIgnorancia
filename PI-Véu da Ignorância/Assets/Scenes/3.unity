@@ -1001,8 +1001,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 864, y: 75}
-  m_SizeDelta: {x: 117.48, y: 123.52}
+  m_AnchoredPosition: {x: 847.22, y: 57.36}
+  m_SizeDelta: {x: 83.93, y: 88.24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &789418076
 MonoBehaviour:
@@ -1600,16 +1600,24 @@ MonoBehaviour:
   frases:
   - AAAH!
   - "Meu Deus\u2026 mas que m****?!"
-  - "A\u2026 a pele dela\u2026 os olhos\u2026Ela n\xE3o \xE9 uma pessoa, N\xC3O TEM
-    COMO!"
+  - "A\u2026 a pele dela\u2026 os olhos\u2026Ela nao e uma pessoa, NAO TEM COMO!"
   - Tenho que sair daqui AGORA!
+  - "Isso \xE9 um jogo? Ela quer que eu\u2026 adivinhe?"
+  - "T\xE1. Se eu acertar\u2026 talvez alguma coisa abra."
+  - "Mas se eu errar\u2026 o que exatamente muda aqui?"
+  - "Merda\u2026 isso t\xE1 ficando mais frio."
+  - "Merda\u2026 isso t\xE1 ficando mais frio.\u201D"
   painelDialogo: {fileID: 1729079316}
   voiceSource: {fileID: 508650868}
   dublagens:
   - {fileID: 8300000, guid: bb7e2ae9ac5bc7344b29b4b3c56d3c29, type: 3}
-  - {fileID: 8300000, guid: b732e55f8740be344851bcbe694efe33, type: 3}
+  - {fileID: 8300000, guid: f80947df7ebdf974fb5d478f383974f0, type: 3}
   - {fileID: 8300000, guid: 7745c48bb557ff14cbf28325fd9ce596, type: 3}
   - {fileID: 8300000, guid: b2f20b956ceef7d498fd52add411d399, type: 3}
+  - {fileID: 8300000, guid: 49a099cc38bfae9419dd7c281a216200, type: 3}
+  - {fileID: 8300000, guid: c6278ddb903e5444a8cb4b90af9d538e, type: 3}
+  - {fileID: 8300000, guid: 25c24b97c982e4f4186f89192a9a2e70, type: 3}
+  - {fileID: 8300000, guid: d2d6c89489725f546bf91f421adfb012, type: 3}
   ambientSource: {fileID: 1867884393}
 --- !u!114 &1729079320
 MonoBehaviour:
