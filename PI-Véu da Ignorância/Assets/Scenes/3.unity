@@ -285,7 +285,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1729079317}
-  - {fileID: 1655205345}
   m_Father: {fileID: 787826416}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &320670494
@@ -322,8 +321,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -69.62497, y: 76.67998}
-  m_SizeDelta: {x: 590.96, y: 45.88}
+  m_AnchoredPosition: {x: 90.4, y: 39.63}
+  m_SizeDelta: {x: 911, y: 119.99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &320670496
 MonoBehaviour:
@@ -374,8 +373,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.3
-  m_fontSizeBase: 25.3
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -412,7 +411,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -9.704742, y: 4.1592054, z: -13.705078, w: -2.7494087}
+  m_margin: {x: -9.704742, y: 4.1592054, z: -41.20877, w: -2.7494087}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1062,7 +1061,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 789418076}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: cena6
+        m_MethodName: Cena3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1453,15 +1452,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1655205344}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1573.1508}
-  m_LocalScale: {x: 1.5732838, y: 1.3301841, z: 0.051554296}
+  m_LocalPosition: {x: 0, y: 0, z: -3421.792}
+  m_LocalScale: {x: 70.17124, y: 54.951866, z: 2.5983365}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 249724103}
+  m_Father: {fileID: 1729079317}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.4, y: -9.12}
+  m_AnchoredPosition: {x: -611.9363, y: 133.43607}
   m_SizeDelta: {x: 8.81, y: 9.491}
   m_Pivot: {x: 0.55170023, y: 0.53870606}
 --- !u!95 &1655205346
@@ -1577,6 +1576,7 @@ RectTransform:
   m_Children:
   - {fileID: 320670495}
   - {fileID: 15880555}
+  - {fileID: 1655205345}
   m_Father: {fileID: 249724103}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1600,13 +1600,8 @@ MonoBehaviour:
   frases:
   - AAAH!
   - "Meu Deus\u2026 mas que m****?!"
-  - "A\u2026 a pele dela\u2026 os olhos\u2026Ela nao e uma pessoa, NAO TEM COMO!"
+  - "A\u2026 aquela pele\u2026 aqueles olhos\u2026Ela nao e uma pessoa, NAO TEM COMO!"
   - Tenho que sair daqui AGORA!
-  - "Isso \xE9 um jogo? Ela quer que eu\u2026 adivinhe?"
-  - "T\xE1. Se eu acertar\u2026 talvez alguma coisa abra."
-  - "Mas se eu errar\u2026 o que exatamente muda aqui?"
-  - "Merda\u2026 isso t\xE1 ficando mais frio."
-  - ok ok. Pensa..Pensa
   painelDialogo: {fileID: 1729079316}
   voiceSource: {fileID: 508650868}
   dublagens:
@@ -1614,11 +1609,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f80947df7ebdf974fb5d478f383974f0, type: 3}
   - {fileID: 8300000, guid: 7745c48bb557ff14cbf28325fd9ce596, type: 3}
   - {fileID: 8300000, guid: b2f20b956ceef7d498fd52add411d399, type: 3}
-  - {fileID: 8300000, guid: 49a099cc38bfae9419dd7c281a216200, type: 3}
-  - {fileID: 8300000, guid: c6278ddb903e5444a8cb4b90af9d538e, type: 3}
-  - {fileID: 8300000, guid: 25c24b97c982e4f4186f89192a9a2e70, type: 3}
-  - {fileID: 8300000, guid: d2d6c89489725f546bf91f421adfb012, type: 3}
-  - {fileID: 8300000, guid: e89e2b59ca6561c4a8e9e2ebbe1e3362, type: 3}
   ambientSource: {fileID: 1867884393}
 --- !u!114 &1729079320
 MonoBehaviour:

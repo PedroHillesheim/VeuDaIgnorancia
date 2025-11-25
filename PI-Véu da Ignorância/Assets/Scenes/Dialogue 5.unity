@@ -210,8 +210,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Isso eh um jogo? Ela quer que eu\u2026 adivinhe?\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dea8e22e9af28e34ca7be0a19b7cf2a6, type: 2}
-  m_sharedMaterial: {fileID: -5776383136956929862, guid: dea8e22e9af28e34ca7be0a19b7cf2a6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 693fa6e5e19a92747888f11d6c1ebd96, type: 2}
+  m_sharedMaterial: {fileID: -4017797250814641293, guid: 693fa6e5e19a92747888f11d6c1ebd96, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -235,8 +235,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10.1
-  m_fontSizeBase: 10.1
+  m_fontSize: 17
+  m_fontSizeBase: 17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1461,11 +1461,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogo
   textoDialogo: {fileID: 320670496}
   frases:
-  - "Isso \xE9 um jogo? Ela quer que eu\u2026 adivinhe\u2026? "
-  - "T\xE1. Se eu acertar\u2026 talvez alguma coisa abra."
-  - "Mas se eu errar\u2026 o que exatamente muda aqui"
-  - "Merda\u2026 isso t\xE1 ficando mais frio."
-  - "Ok\u2026 pensa\u2026 pensa\u2026"
+  - "Isso e um jogo? Ela quer que eu\u2026 adivinhe\u2026? "
+  - "Ta, se eu acertar\u2026 talvez alguma coisa abra."
+  - "Mas se eu errar\u2026 o que exatamente muda aqui?"
+  - "Merda\u2026 isso t\xE1 cada vez mais frio."
+  - "Ok, ok\u2026 pensa\u2026 pensa\u2026"
   painelDialogo: {fileID: 1729079316}
   voiceSource: {fileID: 744147681}
   dublagens:
