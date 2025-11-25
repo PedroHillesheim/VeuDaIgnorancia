@@ -1606,7 +1606,7 @@ MonoBehaviour:
   - "T\xE1. Se eu acertar\u2026 talvez alguma coisa abra."
   - "Mas se eu errar\u2026 o que exatamente muda aqui?"
   - "Merda\u2026 isso t\xE1 ficando mais frio."
-  - "Merda\u2026 isso t\xE1 ficando mais frio.\u201D"
+  - ok ok. Pensa..Pensa
   painelDialogo: {fileID: 1729079316}
   voiceSource: {fileID: 508650868}
   dublagens:
@@ -1618,6 +1618,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c6278ddb903e5444a8cb4b90af9d538e, type: 3}
   - {fileID: 8300000, guid: 25c24b97c982e4f4186f89192a9a2e70, type: 3}
   - {fileID: 8300000, guid: d2d6c89489725f546bf91f421adfb012, type: 3}
+  - {fileID: 8300000, guid: e89e2b59ca6561c4a8e9e2ebbe1e3362, type: 3}
   ambientSource: {fileID: 1867884393}
 --- !u!114 &1729079320
 MonoBehaviour:
