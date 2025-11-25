@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogoData
   falas:
   - nomePersonagem: 'JOGO: FORCA '
-    texto: "Na qual tera que adivinhar a palavra, usando seu conhecimento adquirido
+    texto: Na qual tera que adivinhar a palavra, usando seu conhecimento adquirido
       e escrevendo cada letra, cada erro sera  mostrado no canto inferior esquerdo.
-      Aperte F para come\xE7ar"
+      Aperte F para comecar
