@@ -764,7 +764,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Aperte espaco para pular
+  m_text: 'Aperte espaco para pular
+
+    A - D          movimentacao'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ab2ca2a272a04e3408fcf1104e2e768f, type: 2}
   m_sharedMaterial: {fileID: 1324159251300212750, guid: ab2ca2a272a04e3408fcf1104e2e768f, type: 2}
