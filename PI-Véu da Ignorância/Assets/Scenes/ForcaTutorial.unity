@@ -1003,9 +1003,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Na qual tera que adivinhar a palavra, usando seu conhecimento adquirido
+  m_text: Na qual tera que adivinhar a palavra, usando seu conhecimento adquirido
     e escrevendo cada letra, cada erro sera  mostrado no canto inferior esquerdo.
-    Aperte enter para come\xE7ar."
+    Aperte enter para comecar.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 637b62fae11c9534d847d7680ca089b7, type: 2}
   m_sharedMaterial: {fileID: 8700578986688851816, guid: 637b62fae11c9534d847d7680ca089b7, type: 2}
