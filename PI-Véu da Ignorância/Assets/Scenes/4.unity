@@ -1578,13 +1578,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogo
   textoDialogo: {fileID: 320670496}
   frases:
-  - Tem alguem ai? Isso nao e engracado. Juro que eu vi alguem atras de mim...
-  - " A porta tava aberta\u2026 Como foi que ela trancou sozinha? Tem alguma coisa
-    de errado com esse lugar."
+  - (som de algo caindo atras)
+  - (se vira) Tem alguem ai? Isso nao e engracado. Juro que eu vi alguem atras de
+    mim...
+  - "(nota que a porta do museu esta trancada) A porta tava aberta\u2026 Como foi
+    que ela trancou sozinha? Tem alguma coisa de errado com esse lugar."
   - "Frio\u2026 ta tao frio\u2026 parece que o ar ta me apertando."
   painelDialogo: {fileID: 1729079316}
   voiceSource: {fileID: 279533727}
   dublagens:
+  - {fileID: 8300000, guid: be10286842205ea4e865d0bfee2cdd7b, type: 3}
   - {fileID: 8300000, guid: 3cfc4e7d9e436064caf4e0f0d4ea7fd0, type: 3}
   - {fileID: 8300000, guid: 48b10d6e4f8886d45b3db59f67d2b56e, type: 3}
   - {fileID: 8300000, guid: 87ada4966bc3d0845b955ac3034270ac, type: 3}
