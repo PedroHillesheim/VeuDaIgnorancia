@@ -1603,7 +1603,7 @@ MonoBehaviour:
   voiceSource: {fileID: 508650868}
   dublagens:
   - {fileID: 8300000, guid: bb7e2ae9ac5bc7344b29b4b3c56d3c29, type: 3}
-  - {fileID: 8300000, guid: a79c7deedca3a124bba30f381ce8cffd, type: 3}
+  - {fileID: 8300000, guid: 8e0659665866d9040a18310ae2149af7, type: 3}
   - {fileID: 8300000, guid: 7745c48bb557ff14cbf28325fd9ce596, type: 3}
   - {fileID: 8300000, guid: b2f20b956ceef7d498fd52add411d399, type: 3}
   ambientSource: {fileID: 1867884393}
