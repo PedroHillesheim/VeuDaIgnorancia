@@ -3,9 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class SceneChangeForDistance : MonoBehaviour
 {
-    public string sceneName = "NomeDaNovaCena"; // Nome da cena para carregar
-    public float triggerDistance = 3f; // Distância para trocar de cena
-    public Transform player; // Referência ao player
+    public string sceneName = "NomeDaNovaCena"; 
+    public float triggerDistance = 3f; 
+    public Transform player; 
 
     private bool isChanging = false;
 
