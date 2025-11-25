@@ -1577,8 +1577,8 @@ MonoBehaviour:
   - "Isso e um jogo? Ela quer que eu\u2026 adivinhe\u2026? "
   - "Ta. Se eu acertar\u2026 talvez alguma coisa abra."
   - "Mas se eu errar\u2026 o que exatamente muda aqui?"
-  - "M*****\u2026 isso ta cada vez mais frio."
-  - "Ok\u2026 ahhm, pensa\u2026 pensa\u2026"
+  - "M*****\u2026 Ta cada vez mais frio."
+  - "Ok\u2026 ok, pensa\u2026 pensa\u2026"
   painelDialogo: {fileID: 1729079316}
   voiceSource: {fileID: 744147681}
   dublagens:

@@ -576,7 +576,7 @@ MonoBehaviour:
 
     Para jogar, voce deve identificar e clicar em cada
     erro. Se a imagem clicada for um erro, voce perdera tentativas, voce pode consultar
-    a arte de referencia clicando no botao ''''Arte Original''''.'
+    a arte de referencia clicando no botao ''''Arte''''.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 637b62fae11c9534d847d7680ca089b7, type: 2}
   m_sharedMaterial: {fileID: 8700578986688851816, guid: 637b62fae11c9534d847d7680ca089b7, type: 2}
