@@ -17,7 +17,7 @@ public class Dialogue: MonoBehaviour
 
     void Start()
     {
-        Ambient.Play();
+      
         
         if (frases.Length > 0)
         {
@@ -27,7 +27,7 @@ public class Dialogue: MonoBehaviour
 
     void Update()
     {
-        SomAtual();
+      
         if (Input.GetKeyDown(KeyCode.E))
         {
             ProximaFrase();
@@ -54,16 +54,7 @@ public class Dialogue: MonoBehaviour
         }
 
     }
-    public void SomAtual()
-    {
-
-        if (CurrentAudio < Fala.Length)
-        {
-            Fala[CurrentAudio].Play(); // Toca o áudio atual
-            Invoke(nameof(SomAtual), Fala[CurrentAudio].clip.length); // Chama o próximo após o término
-            CurrentAudio++; // Avança para o próximo áudio
-        }
-    }
+  
 }
 
 
