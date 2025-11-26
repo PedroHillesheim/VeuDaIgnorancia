@@ -1417,7 +1417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogo
   textoDialogo: {fileID: 320670496}
   frases:
-  - Me chamo mira...Mira schendel..Habito nesse museu ha alguns anos.. vi que estava
+  - Me chamo Mira... Mira Schendel..Habito nesse museu ha alguns anos.. vi que estava
     perdido. Eu posso te ajudar a sair.
   - As palavras estao presas, esperando serem completadas.
   - Use as letras certas para revelar o que foi esquecido
