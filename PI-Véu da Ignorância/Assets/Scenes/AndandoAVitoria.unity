@@ -651,7 +651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneChangeForDistance
   sceneName: Finish
-  triggerDistance: 3
+  triggerDistance: 2
   player: {fileID: 1656643803}
 --- !u!212 &1536895724
 SpriteRenderer:
@@ -876,6 +876,7 @@ GameObject:
   - component: {fileID: 1656643801}
   - component: {fileID: 1656643800}
   - component: {fileID: 1656643799}
+  - component: {fileID: 1656643804}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1051,6 +1052,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1656643804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656643798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac4121b46860c8b42aac1ab663cfef3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player
+  jumpForce: 7
+  walkSpeed: 5
+  runSpeed: 9
 --- !u!1 &2098019328
 GameObject:
   m_ObjectHideFlags: 0
