@@ -7,16 +7,19 @@ public class Dialogue : MonoBehaviour
     public string[] frases;
     private int indice = 0;
     public GameObject painelDialogo;
-    public AudioSource voiceSource;      
-    public AudioClip[] dublagens;        
-    public AudioSource ambientSource;    
+    public GameObject panel1;           // <-- ADICIONADO
+    public AudioSource voiceSource;
+    public AudioClip[] dublagens;
+    public AudioSource ambientSource;
 
-    void Start()
+   void Start()
     {
-        if (ambientSource != null) 
-        {
+        if (panel1 != null)
+            panel1.SetActive(false);   // <--- Panel1 começa sempre desativado
+
+        if (ambientSource != null)
             ambientSource.Play();
-        }
+
         if (frases != null && frases.Length > 0)
         {
             indice = 0;
@@ -49,6 +52,7 @@ public class Dialogue : MonoBehaviour
         else
         {
             painelDialogo.SetActive(false);
+            if (panel1 != null) panel1.SetActive(true); // <-- MOSTRA APÓS SUMIR
             Debug.Log("Fim do diálogo!");
         }
     }
@@ -60,10 +64,12 @@ public class Dialogue : MonoBehaviour
             Debug.LogWarning("voiceSource não atribuído no Inspector!");
             return;
         }
-        if (voiceSource.isPlaying) 
-        { 
+
+        if (voiceSource.isPlaying)
+        {
             voiceSource.Stop();
         }
+
         if (index < dublagens.Length && dublagens[index] != null)
         {
             voiceSource.clip = dublagens[index];
