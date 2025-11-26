@@ -2,11 +2,10 @@
 
 public class PuzzlePiece : MonoBehaviour
 {
+    public Vector3 originPosition;
     public Vector3 correctPosition;
     public float snapDistance = 0.5f;
-
     public bool IsPlaced { get; private set; } = false;
-
     private Vector3 offset;
     private bool dragging = false;
     PuzzleManager puzzleManager;
@@ -16,7 +15,6 @@ public class PuzzlePiece : MonoBehaviour
     private void Start()
     {
         puzzleManager = FindFirstObjectByType(typeof(PuzzleManager)) as PuzzleManager;
-
     }
     void Awake()
     {
