@@ -154,8 +154,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -36.299988, y: -161.39}
-  m_SizeDelta: {x: 200, y: 44.06}
+  m_AnchoredPosition: {x: 112.41, y: -174.91}
+  m_SizeDelta: {x: 497.41, y: 71.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &121054016
 MonoBehaviour:
@@ -479,6 +479,7 @@ GameObject:
   - component: {fileID: 647254262}
   - component: {fileID: 647254264}
   - component: {fileID: 647254263}
+  - component: {fileID: 647254265}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -543,6 +544,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647254261}
   m_CullTransparentMesh: 1
+--- !u!114 &647254265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647254261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cd70c0ec0bdd4a45b8172690bfa4306, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  textoDialogo: {fileID: 0}
+  frases:
+  - Alguns quadros estao... errados. Linhas quebradas, formas fora do lugar. Corrija-os.
+    Observe com atencao.
+  - Quando tudo se encaixa, o museu respira aliviado.
+  - "Mas olhe r\xE1pido. \xC0s vezes, o que aparece depois... n\xE3o devia existir."
+  painelDialogo: {fileID: 647254261}
+  voiceSource: {fileID: 0}
+  dublagens:
+  - {fileID: 8300000, guid: f29fb2c13dfa70847ba54c6cc35b55b1, type: 3}
+  - {fileID: 8300000, guid: 13a2ba5de87e42744a9fda51217f30f1, type: 3}
+  - {fileID: 8300000, guid: e41422e49481ce64d9616c0b99353173, type: 3}
+  ambientSource: {fileID: 0}
 --- !u!1 &949291958
 GameObject:
   m_ObjectHideFlags: 0
