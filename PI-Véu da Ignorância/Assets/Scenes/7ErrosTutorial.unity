@@ -956,7 +956,7 @@ GameObject:
   - component: {fileID: 2020560016}
   - component: {fileID: 2020560015}
   - component: {fileID: 2020560014}
-  - component: {fileID: 2020560013}
+  - component: {fileID: 2020560017}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -983,18 +983,6 @@ RectTransform:
   m_AnchoredPosition: {x: -144, y: -161}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2020560013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2020560011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d42aa3933d5945e4aa9b486a3924ed6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TrocadeTela
 --- !u!114 &2020560014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1039,16 +1027,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2020560013}
-        m_TargetAssemblyTypeName: TrocadeTela, Assembly-CSharp
-        m_MethodName: OutraScene
-        m_Mode: 5
+      - m_Target: {fileID: 2020560017}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: game2
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: game 3
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2020560015
@@ -1089,6 +1077,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2020560011}
   m_CullTransparentMesh: 1
+--- !u!114 &2020560017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020560011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1314d4380c9ef4e931bc51d8b79bfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuPrincipal
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
